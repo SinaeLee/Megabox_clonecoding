@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        #wrap {
+            padding:0px;
+            margin:0 auto;
+            margin-top:20px;
+            width:800px;
+            height:600px;
+            border:1px solid;
+            position:relative; /*최상위태그의 포지션 지정*/
+        }
+        header {
+            height:50px;
+            line-height:50px;
+            background-color:#14148C;
+            color:white;
+        }
+        header h3 {
+            font-color:white;
+            padding-left:10px;
+        }
+        #cont {
+            width:380px;
+            padding:20px;
+        }
+        .inform {
+            width:380px;
+            height:45px;
+            margin-bottom:17px;
+            border:solid 1px darkgray;
+        }
+        .phone {
+            margin-bottom:20px;
+        }
+        .phone input{
+            width:50px;
+            height:25px;
+            line-height:25px;
+        }
+        .gender {
+            text-align: center;
+            margin-bottom:20px;
+        }
+        .signUp button {
+            width:380px;
+            height:50px;
+            margin-top:10px;
+            line-height:50px;
+            color:dimgray;
+            bgcolor:gray;
+            font-size:15px;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <header> <!--로그인헤더-->
+        <div id="headerBox">
+            <h3>회원가입</h3>
+        </div>
+    </header>
+
+    <div id="cont">
+        <form name="signup_form" method="get" action="./signup">
+            <div class="email">
+                <input id="id" type="text" class="inform" placeholder="아이디">
+                <div id="emailError" class="error"></div>
+            </div>
+            <div class="name">
+                <input id="name"  type="text" class="inform" placeholder="이름">
+                <div id="nameError" class="error"></div>
+            </div>
+            <div class="password">
+                <input id="password" type="password" class="inform" placeholder="비밀번호">
+                <div id="passwordError" class="error"></div>
+            </div>
+            <div class="passwordCheck">
+                <input id="passwordCheck" type="password" class="inform" placeholder="비밀번호 확인">
+                <div id="passwordCheckError" class="error"></div>
+            </div>
+            <div class="phone">
+                <input id="phone1" type="text" size="1" maxlength="3" oninput="changePhone1()"> -
+                <input id="phone2" type="text" size="3" maxlength="4" oninput="changePhone2()"> -
+                <input id="phone3" type="text" size="3" maxlength="4" oninput="changePhone3()">
+            </div>
+
+            <div class="gender">
+                <input id="gender_man" type="radio" name="gender">남성
+                <input id="gender_woman" type="radio" name="gender">여성
+                <div id="genderError" class="error"></div>
+            </div>
+            <div class="line">
+                <hr>
+            </div>
+            <div class="signUp">
+                <button id="signUpBtn" disabled onclick="signUpCheck()">가입하기</button>
+            </div>
+        </form>
+    </div> <!-- cont 끝 -->
+
+</div> <!-- wrap 끝 -->
+</body>
+</html>
