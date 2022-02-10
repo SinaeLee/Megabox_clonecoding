@@ -8,63 +8,57 @@
 
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="assets/icons/favicon.ico">
+	<style>
+		header {background-color: lightgray;}
+	</style>
 </head>
 
 <body>
     <header id="header">
         <div class="container">
             <div id="mNav">
-                <h2 class="ir_so">메가박스 전체메뉴</h2>
+                <h2 class="ir_so">메가박스 상단메뉴 상단</h2>
                 <a href="#" class="ham"><span></span></a>
             </div>
-            <nav class="nav">
-                <div style="float:left">
-                    <li><a href="#">VIP LOUNGE</a> <a href="#">멤버십</a> <a href="#">고객센터</a></li>
-                </div>
-                <h1>
-                    <a href="#">
-<!--                        <div style="text-align : center;">-->
-                        <img src="image/logo-white_new2.png" align="center" alt="MEGABOXlogo">
-<!--                        </div>-->
-                    </a>
-                </h1>
-                <div style="float:right">
-                    <li><a href="#">로그인</a> <a href="#">회원가입</a> <a href="#">빠른예매</a></li>
-                </div>
-            </nav>
+			<div style="float:left">
+				<li>
+					<a href="#">VIP LOUNGE</a> <a href="#">멤버십</a> <a href="#">고객센터</a>
+				</li>
+				<li>
+					<a href="#"> <img id="totalmenu" src="image/ico-sitemap-white.png">(전체메뉴)</a>
+					<a href="#"><img id="serachButton" src="image/ico-footer-search.png"></a>
+					<a href="#"><img id="closeButton" src="image/ico-layer-close-g.png"></a>
+					<a href="#">영화</a>
+					<a href="#">예매</a>
+					<a href="#">극장</a>
+				</li>
+			</div>
+			<div style="float:right">
+				<li>
+					<a href="#">로그인</a> <a href="#">회원가입</a> <a href="#">빠른예매</a>
+				</li>
+			</div>
+			<div style="float:right">
+				<li>
+					<a href="#">이벤트</a>
+					<a href="#">스토어</a>
+					<a href="#">혜택</a>
+					<a href="#">상영시간표<img id="timetable" src="image/ico-schedule-white.png"></a>
+					<a href="#">나의 메가박스<img id="mymegabox" src="image/ico-mymega-white.png"></a>
+				</li>
+			</div>
+			<h1>
+				<a href="#">
+					<div style="text-align : center;">
+					<img src="image/logo-white_new2.png" alt="MEGABOXlogo">
+					</div>
+				</a>
+			</h1>
         </div>
-        <br>
-        <h2 class="ir_so">전체메뉴 라인</h2>
-        <div class="banner_menu">
-            <div class="container">
-                <div class="row">
-                    <div class="bm_left">
-                        <ul>
-                            <li class="total"><a href="#"><i class="fas fa-bars"></i> <img id="serachButton" src="image/ico-sitemap-white.png">(전체메뉴)</a></li>
-                                <div id="serachButtonBox">
-                                    <img id="serachButton" src="image/ico-footer-search.png">
-                                    <img id="closeButton" src="image/ico-layer-close-g.png">
-                                </div>
-                            <li class="line"><a href="#">영화</a></li>
-                            <li class="line"><a href="#">예매</a></li>
-                            <li class="line"><a href="#">극장</a></li>
-                        </ul>
-                    </div>
-                    <div class="bm_right">
-                        <ul>
-                            <li class="line"><a href="#">이벤트</a></li>
-                            <li class="line"><a href="#">스토어</a></li>
-                            <li class="line"><a href="#">혜택</a></li>
-                            <li class="line"><a href="#">상영시간표<img id="timetable" src="image/ico-schedule-white.png"></a></li>
-                            <li class="line"><a href="#">나의 메가박스<img id="mymegabox" src="image/ico-mymega-white.png"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<br>
     </header>
     <!-- //header -->
-
+<br>
    <section id="movie">
         <div class="container">
            <div class="row">
@@ -83,6 +77,17 @@
                        </ul>
                    </div>
                    <!-- //movie_title -->
+				   <div class="search-link">
+					   <div class="cell">
+						   <div class="search">
+							   input typ="text" placeholder="영화명을 입력해 주세요" title="영화 검색" class="input-text" id="movieName"
+							   <button type="button" class="btn" id="btnSearch">
+								   <i class="iconset ico-search-w"></i>
+								   "검색"
+							   </button>
+						   </div>
+					   </div>
+				   </div>
 
                    <div class="movie_chart">
                     <!-- chart_cont1 -->
@@ -155,61 +160,9 @@
        </div>
        <!-- //.container -->
    </section>
-   <!-- //movie -->	
-    <header id="header">
-        <div class="container">
-            <div id="mNav">
-                <h2 class="ir_so">메가박스 전체메뉴</h2>
-                <a href="#" class="ham"><span></span></a>
-            </div>
-            <nav class="nav">
-                <div style="float:left">
-                    <li><a href="#">VIP LOUNGE</a> <a href="#">멤버십</a> <a href="#">고객센터</a></li>
-                </div>
-                <h1>
-                    <a href="#">
-<!--                        <div style="text-align : center;">-->
-                        <img src="image/logo-white_new2.png" align="center" alt="MEGABOXlogo">
-<!--                        </div>-->
-                    </a>
-                </h1>
-                <div style="float:right">
-                    <li><a href="#">로그인</a> <a href="#">회원가입</a> <a href="#">빠른예매</a></li>
-                </div>
-            </nav>
-        </div>
-        <br>
-        <h2 class="ir_so">전체메뉴 라인</h2>
-        <div class="banner_menu">
-            <div class="container">
-                <div class="row">
-                    <div class="bm_left">
-                        <ul>
-                            <li class="total"><a href="#"><i class="fas fa-bars"></i> <img id="serachButton" src="image/ico-sitemap-white.png">(전체메뉴)</a></li>
-                                <div id="serachButtonBox">
-                                    <img id="serachButton" src="image/ico-footer-search.png">
-                                    <img id="closeButton" src="image/ico-layer-close-g.png">
-                                </div>
-                            <li class="line"><a href="#">영화</a></li>
-                            <li class="line"><a href="#">예매</a></li>
-                            <li class="line"><a href="#">극장</a></li>
-                        </ul>
-                    </div>
-                    <div class="bm_right">
-                        <ul>
-                            <li class="line"><a href="#">이벤트</a></li>
-                            <li class="line"><a href="#">스토어</a></li>
-                            <li class="line"><a href="#">혜택</a></li>
-                            <li class="line"><a href="#">상영시간표<img id="timetable" src="image/ico-schedule-white.png"></a></li>
-                            <li class="line"><a href="#">나의 메가박스<img id="mymegabox" src="image/ico-mymega-white.png"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- //header -->
-	
+   <!-- //movie -->
+
+
 			<!-- section main-benefit : 혜택 -->
 			<div id="main_section02" class="section main-benefit">
 
@@ -695,3 +648,5 @@
 <!--// footer -->
 
 </body>
+
+</html>
