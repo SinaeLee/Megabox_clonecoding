@@ -17,18 +17,10 @@ h2.tit {color:#351f66 !important;}
 .main-page .tit-util h2.tit {padding:0 0 30px 0; font-size:2em; color:#351f66 !important;}
 .main-page .tit-util .btn-more-cross {display:block; margin-top:5px;}
 
-/* 메인 레이어 공지 */
-.main-page .main-notice-layer {overflow:hidden; display:block; position:absolute; left:50%; top:200px; z-index:50; width:400px; height:435px; margin:0 0 0 -200px; padding:0; border-radius:10px; background-color:#ecf0f4;}
-.main-page .main-notice-layer .html {width:400px; height:400px; line-height:1; padding:10px;}
-.main-page .main-notice-layer .img {overflow:hidden; width:400px; height:400px; font-size:0; line-height:0;}
-.main-page .main-notice-layer .img a {display:block;}
-.main-page .main-notice-layer .img img {width:400px; height:400px;}
-.main-page .main-notice-layer .util {overflow:hidden; height:35px; line-height:35px; padding:0 20px; text-align:right;}
-.main-page .main-notice-layer .util .btn-close-main-notice {overflow:hidden; width:12px; height:12px; display:inline-block; margin:0 0 0 10px; padding:0; text-indent:-9999px; border:0; vertical-align:middle; background:url('../images/main/btn-close-main-notice.png') no-repeat 0 0;}
+/* 메인 레이어 공지 삭제*/
 
-
-/* my movie : 로그인 했을때만 출력? */
-.my-movie-main {position:absolute; right:0; top:130px; z-index:50; width:140px; max-height:600px; margin:0 -140px 0 0; padding:0 0 40px 0; background-color:#282c32; border-radius:0 10px 10px 0;
+/* my movie : 로그인 했을때만 출력?? 필요여부 판단필요 */
+/*.my-movie-main {position:absolute; right:0; top:130px; z-index:50; width:140px; max-height:600px; margin:0 -140px 0 0; padding:0 0 40px 0; background-color:#282c32; border-radius:0 10px 10px 0;
 	-webkit-transition : margin 0.3s;
 	transition : margin 0.3s;
 }
@@ -62,7 +54,7 @@ h2.tit {color:#351f66 !important;}
 .my-movie-main .list li.txt {background-color:#1c1f23;}
 .my-movie-main .list li.txt p {margin:0; padding:8px 10px; font-size:0.8667em; text-align:center;}
 .my-movie-main .list li.txt a {display:block; height:40px; line-height:39px; font-size:0.8667em; text-align:center;}
-.my-movie-main .list li.txt a .iconset {margin:-2px 0 0 4px;}
+.my-movie-main .list li.txt a .iconset {margin:-2px 0 0 4px;}*/
 
 /* 메인 영화 */
 .main-movie {display:block; position:relative; min-height:880px; padding:0 0 80px 0; /* background-color:#222; */}
@@ -190,69 +182,6 @@ h2.tit {color:#351f66 !important;}
 .main-benefit .menu-link .card a {background-image: url('../images/common/ico/ico-card-main.png'); background-position:center 5px;}
 .main-benefit .menu-link .event a {background-image: url('../images/common/ico/ico-event-main.png'); background-position:center 0;}
 .main-benefit .menu-link .store a {background-image: url('../images/common/ico/ico-store-main.png'); background-position:center 0;}
-.main-benefit .grand-open {overflow:hidden; position:relative; min-width:1100px; /* height:335px;  */margin:50px 0 0 0; padding:0; border-top:1px solid #5c419d;}
-.main-benefit .grand-open:before,
-.main-benefit .grand-open:after {content:''; display:table;}
-.main-benefit .grand-open:after {clear:both;}
-.main-benefit .grand-open p {margin:0; padding:0;}
-.main-benefit .grand-open .tit {position:absolute; left:0; top:50px; color:#fff; line-height:1.1;}
-.main-benefit .grand-open .tit span {display:block;}
-.main-benefit .grand-open .tit strong {display:block; padding:15px 0 0 0; font-size:1.6em; font-weight:700;}
-.main-benefit .grand-open .open-cont {padding:50px 0 0 373px;}
-.main-benefit .grand-open .open-cont .open-swiper {position:relative; overflow:hidden; width:100%; /* height:285px;  */}
-.main-benefit .grand-open .open-cont .open-swiper .cell {overflow:hidden;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a {overflow:hidden; display:block; position:relative; width:204px; height:204px; margin:0 auto; padding:60px 0 0 0; border-radius:204px; text-align:center; background-color:#000; box-shadow:5px 5px 10px 0px rgba(0, 0, 0, 0.25); text-decoration:none;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a > * {position:relative; z-index:2;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a .label {position:absolute; left:0; top:35px; display:block; width:100%; text-align:center;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a .label em {display:inline-block; min-width:76px; height:25px; margin:0 auto; line-height:25px; color:#fff; font-size:0.8667em;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a .area {color:#fff; line-height:1.1;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a .area span {display:block; padding:15px 0 0 0;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a .area strong {display:block; padding:8px 0 0 0; font-size:1.6em;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a .date {display:block; padding:15px 0 0 0; color:#fff; line-height:1.1;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a > img {display:block; position:absolute; left:0; top:0; z-index:1; width:204px; height:204px; opacity:0.5;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a:hover,
-.main-benefit .grand-open .open-cont .open-swiper .cell a:focus {background-color:#fff; background-image:none !important;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a:hover > img,
-.main-benefit .grand-open .open-cont .open-swiper .cell a:focus > img {opacity:0;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.new {background-image: url('../images/theater/bg-theater-new.jpg'); background-position:center 0; background-size:100%;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.new .label em {background-color:#01738b;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.new:hover .area,
-.main-benefit .grand-open .open-cont .open-swiper .cell a.new:focus .area {color:#01738b;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.new:hover .date,
-.main-benefit .grand-open .open-cont .open-swiper .cell a.new:focus .date {color:#01738b;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.renewal {background-image: url('../images/theater/bg-theater-renewal.jpg'); background-position:center 0; background-size:100%;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.renewal .label em {background-color:#503396;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.renewal:hover .area,
-.main-benefit .grand-open .open-cont .open-swiper .cell a.renewal:focus .area {color:#503396;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.renewal:hover .date,
-.main-benefit .grand-open .open-cont .open-swiper .cell a.renewal:focus .date {color:#503396;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.open {background-image: url('../images/theater/bg-theater-open.jpg'); background-position:center 0; background-size:100%;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.open .label em {background-color:#db0f02;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.open:hover .area,
-.main-benefit .grand-open .open-cont .open-swiper .cell a.open:focus .area {color:#db0f02;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.open:hover .date,
-.main-benefit .grand-open .open-cont .open-swiper .cell a.open:focus .date {color:#db0f02;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.etc {background-image: url('../images/theater/bg-theater-etc.jpg'); background-position:center 0; background-size:100%;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.etc .label em {background-color:#44435c;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.etc:hover .area,
-.main-benefit .grand-open .open-cont .open-swiper .cell a.etc:focus .area {color:#44435c;}
-.main-benefit .grand-open .open-cont .open-swiper .cell a.etc:hover .date,
-.main-benefit .grand-open .open-cont .open-swiper .cell a.etc:focus .date {color:#44435c;}
-.main-benefit .grand-open .open-cont .open-pagination {overflow:hidden; position:absolute; left:0; top:170px; bottom:inherit; width:160px; color:#fff; /*  background-color:#28194b; */}
-.main-benefit .grand-open .open-cont .open-pagination .swiper-pagination-bullet {display:block; float:left; width:12.5%; height:2px; margin:0; border-radius:0; background-color:#28194b; opacity:1;}
-.main-benefit .grand-open .open-cont .open-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {background-color:#fff;}
-.main-benefit .grand-open .open-cont .open-control {overflow:hidden; position:absolute; left:175px; top:164px;}
-.main-benefit .grand-open .open-cont .open-control button {overflow:hidden; display:block; float:left; height:12px; margin:0 0 0 8px; padding:0; border:0; text-indent:-9999px; background-color:transparent;}
-.main-benefit .grand-open .open-cont .open-control .open-prev {width:7px; background-image:url('../images/main/btn-benefit-theater-prev.png');}
-.main-benefit .grand-open .open-cont .open-control .open-next {width:7px; background-image:url('../images/main/btn-benefit-theater-next.png');}
-.main-benefit .grand-open .open-cont .open-control .open-pause {display:none; width:6px; background-image:url('../images/main/btn-benefit-theater-pause.png');}
-.main-benefit .grand-open .open-cont .open-control .open-pause.on {display:block;}
-.main-benefit .grand-open .open-cont .open-control .open-pause.active {display:block;}
-.main-benefit .grand-open .open-cont .open-control .open-play {display:none; width:6px; background-image:url('../images/main/btn-benefit-theater-play.png');}
-.main-benefit .grand-open .open-cont .open-control .open-play.on {display:block;}
-.main-benefit .grand-open .open-cont .open-control .open-pause.active {display:block;}
-.main-benefit .grand-open .open-cont .count-num {overflow:hidden; position:absolute; left:235px; top:159px; color:#fff;}
-.main-benefit .grand-open .swiper-container {background-color:#fff;}
 
 /* 큐레이션 */
 .main-curation {display:block; position:relative; min-height:840px; padding:0; background-color:#252451;}
@@ -328,14 +257,7 @@ h2.tit {color:#351f66 !important;}
 .main-info .info-special a:hover,
 .main-info .info-special a:focus {background-position:0 bottom;}
 
-/* 메가박스  안내  - vip 등 링크 */
-.main-info .info-etc {display:block; width:1100px; margin:0 auto; padding:50px 0;}
-.main-info .info-etc:before,
-.main-info .info-etc:after {content:''; display:table;}
-.main-info .info-etc:after {clear:both;}
-.main-info .info-etc .cell {float:left; width:25%; line-height:30px; border-left:1px solid #e2e2e2; text-align:center;}
-.main-info .info-etc .cell:first-child {border-left:0;}
-.main-info .info-etc a {display:inline-block; color:#222; font-size:1.2em; font-weight:400;}
+/* 메가박스  안내  - vip 등 링크  - 삭제*/
 
 /* 메가박스  안내  - 전체공지 */
 .main-info .info-notice {margin-top:50px; border:1px solid #e2e2e2; border-width:1px 0;}
@@ -369,19 +291,4 @@ h2.tit {color:#351f66 !important;}
 .main-bottom-ad {overflow:hidden; width:100%; height:227px; margin:0 auto; color:#fff; text-align:center;}
 .main-bottom-ad iframe {display:block; margin:0 auto;}
 
-/*20210802 롤링팝업*/
-.main-page .main-notice-layer.rolling_pop{width:360px; height:325px; padding:20px; background-color:#fff; overflow:unset; box-shadow:10px 10px 20px rgba(0, 0, 0, 0.3);}
-.main-page .main-notice-layer.rolling_pop #pop_swiper{height:100%;}
-.main-page .main-notice-layer.rolling_pop #pop_swiper .swiper-wrapper{height:100%;}
-.main-page .main-notice-layer.rolling_pop #pop_swiper .swiper-slide{width:320px; height:250px; position:relative;}
-.main-page .main-notice-layer.rolling_pop #pop_swiper .swiper-slide a{display: block; width: 320px; height: 250px; overflow: hidden; border-radius: 10px;}
-.main-page .main-notice-layer.rolling_pop #pop_swiper .swiper-slide img{width:320px; height:250px;}
-.main-page .main-notice-layer.rolling_pop #pop_swiper .navbox{position:absolute; bottom:0; left:0; width:87px;  height:16px; z-index:99;}
-.main-page .main-notice-layer.rolling_pop #pop_swiper .navbox .btn_pg{position:absolute; left:17px; width:70px; height:16px; padding:4px 0; bottom:0; }
-.main-page .main-notice-layer.rolling_pop #pop_swiper .navbox .btn_pg:after{content:'.';display:block;font-size:0;height:0px;line-height:0;clear:both;}
-.main-page .main-notice-layer.rolling_pop #pop_swiper .navbox .btn_pg .swiper-pagination-bullet{display:block; float:left; width:8px; height:8px; margin-right:6px; display:inline-block; border-radius:100%; background:#000; opacity:0.2;}
-.main-page .main-notice-layer.rolling_pop #pop_swiper .navbox .btn_pg .swiper-pagination-bullet-active{opacity:1; background:#3d008c;}
-.main-page .main-notice-layer.rolling_pop #pop_swiper .navbox .pop_lobtn_play{position:absolute; bottom:0; left:0; width:13px; height:16px; background:url('../images/common/ico/ic_stop.png') 50% no-repeat; cursor:pointer;}
-.main-page .main-notice-layer.rolling_pop #pop_swiper .navbox .pop_lobtn_play.stop{background:url('../images/common/ico/ic_play.png') 50% no-repeat;}
-.main-page .main-notice-layer.rolling_pop .util{position:absolute; bottom:17px; right:20px; overflow:hidden; height:21px; line-height:16px; padding:0 0; text-align:right; font-size:13px; color:#999999;z-index:9;}
-.main-page .main-notice-layer.rolling_pop .btn-close-main-notice{position:absolute; top:-10px; right:-10px; width:28px; height:28px; background:url('../images/common/ico/ico-layer-close-g.png'); overflow:hidden; text-indent:-9999px; border:0;}
+/*20210802 롤링팝업* 삭제 /
