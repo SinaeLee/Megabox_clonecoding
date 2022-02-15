@@ -113,7 +113,9 @@ template {
 }
 
 
-
+.chartjs-render-monitor {
+    animation: chartjs-render-animation 0.001s;
+}
 
 
 
@@ -497,7 +499,7 @@ button:focus{
     margin:0;
     padding:0;
     text-indent:-9999px;
-    background:url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-location-home.png) no-repeat center
+    background:url(../../pc/images/common/bg/bg-location-home.png) no-repeat center
 }
 .page-util .location a.no-link{
     pointer-events:none;
@@ -521,7 +523,7 @@ button:focus{
     top:0;
     width:5px;
     height:42px;
-    background:url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-location-arr.png) no-repeat left center
+    background:url(../../pc/images/common/bg/bg-location-arr.png) no-repeat left center
 }
 .page-util .sns-share{
     position:relative;
@@ -541,7 +543,7 @@ button:focus{
     width:15px;
     height:18px;
     margin-left:5px;
-    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-share-black.png)
+    background-image:url(../../pc/images/common/ico/ico-share-black.png)
 }
 .page-util .sns-share .btn-sns-share-wrap{
     display:none;
@@ -580,7 +582,7 @@ button:focus{
     display:block;
     width:22px;
     height:12px;
-    background:url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-tooltip-arr-top-script.png) no-repeat 0 0
+    background:url(../../pc/images/common/bg/bg-tooltip-arr-top-script.png) no-repeat 0 0
 }
 .page-util .sns-share .btn-sns-share-wrap .cont-area{
     position:relative
@@ -597,7 +599,7 @@ button:focus{
     padding:0;
     border:0;
     text-indent:-9999px;
-    background:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-close-common-sns.png) no-repeat 0 0
+    background:url(../../pc/images/common/btn/btn-close-common-sns.png) no-repeat 0 0
 }
 .page-util.fixed{
     position:fixed;
@@ -614,7 +616,7 @@ button:focus{
     color:#fff
 }
 .page-util.fixed .sns-share .btn .ico-share-toggle{
-    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-share-white.png)
+    background-image:url(../../pc/images/common/ico/ico-share-white.png)
 }
 .page-util.fixed .sns-share .btn-sns-share-wrap .btn{
     color:#444
@@ -629,6 +631,59 @@ body.no-scroll .page-util.fixed{
     right:18px;
     width:auto
 }
+.btn-more{
+    position:relative;
+    padding:40px 0 0 0
+}
+.btn-more .btn{
+    display:block;
+    width:100%;
+    margin:0;
+    padding:0;
+    height:40px;
+    border:0;
+    border-bottom:1px solid #eaeaea;
+    background-color:transparent;
+    color:#666
+}
+.btn-more .btn i{
+    margin-left:6px
+}
+.btn-more .btn:hover{
+    border-color:#666
+}
+.btn-more.on .btn .ico-btn-more-arr{
+    transform:rotate(180deg)
+}
+.btn-more.v1 .btn{
+    border:1px solid #eaeaea
+}
+.btn-more.v1 .btn:hover{
+    border-color:#666
+}
+.btn-more-cross{
+    overflow:hidden;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    margin:0;
+    padding:0;
+    text-indent:-999px;
+    border:0;
+    background-color:transparent;
+    background-repeat:no-repeat;
+    background-position:center
+}
+.btn-more-cross.white{
+    background-image:url(../../pc/images/common/btn/btn-more-cross-white.png)
+}
+.btn-more-cross.gray{
+    background-image:url(../../pc/images/common/btn/btn-more-cross-gray.png)
+}
+.btn-more-cross.purple{
+    background-image:url(../../pc/images/common/btn/btn-more-cross-purple.png)
+}
+
 .btn-sns-share-group{
     margin:0;
     padding:0;
@@ -647,20 +702,56 @@ body.no-scroll .page-util.fixed{
     background-repeat:no-repeat
 }
 .btn-sns-share-group .btn.kakao{
-    background-image:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-kakao.png)
+    background-image:url(../../pc/images/common/btn/btn-sns-share-kakao.png)
 }
 .btn-sns-share-group .btn.face{
-    background-image:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-face.png)
+    background-image:url(../../pc/images/common/btn/btn-sns-share-face.png)
 }
 .btn-sns-share-group .btn.band{
-    background-image:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-band.png)
+    background-image:url(../../pc/images/common/btn/btn-sns-share-band.png)
 }
 .btn-sns-share-group .btn.twitter{
-    background-image:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-twitter.png)
+    background-image:url(../../pc/images/common/btn/btn-sns-share-twitter.png)
 }
 .btn-sns-share-group .btn.link{
-    background-image:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-link.png)
+    background-image:url(../../pc/images/common/btn/btn-sns-share-link.png)
 }
+
+.iconset{
+    overflow:hidden;
+    display:inline-block;
+    margin:-1px 0 0 0;
+    padding:0;
+    font-size:0;
+    line-height:0;
+    vertical-align:middle;
+    background-position:0 0;
+    background-repeat:no-repeat
+}
+.ico-tooltip-gray{
+    overflow:hidden;
+    width:16px;
+    height:16px;
+    background-image:url(../../pc/images/common/ico/ico-tooltip-gray.png)
+}
+.ico-tooltip-gray-outline{
+    overflow:hidden;
+    width:16px;
+    height:16px;
+    background-image:url(../../pc/images/common/ico/ico-tooltip-gray-outline.png)
+}
+.ico-heart-line{
+    width:17px;
+    height:15px;
+    background-image:url(../../pc/images/common/ico/ico-heart-line.png)
+}
+.ico-sns-line{
+    width:17px;
+    height:17px;
+    background-image:url(../../pc/images/common/ico/ico-sns-line.png)
+}
+
+
 .ui-tooltip{
     position:absolute;
     z-index:9999;
@@ -683,7 +774,7 @@ body.no-scroll .page-util.fixed{
     width:10px;
     height:6px;
     margin:0;
-    background:url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-arr-jq-tooltip.png) no-repeat 0 0
+    background:url(../../pc/images/common/bg/bg-arr-jq-tooltip.png) no-repeat 0 0
 }
 .quick-area{
     display:none;
@@ -701,7 +792,7 @@ body.no-scroll .page-util.fixed{
     margin:0 0 0 550px;
     text-indent:-9999px;
     border-radius:48px;
-    background:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-go-top.png) no-repeat 0 0;
+    background:url(../../pc/images/common/btn/btn-go-top.png) no-repeat 0 0;
     box-shadow:1px 1px 7px 0 rgba(0,0,0,.5)
 }
 
@@ -748,7 +839,7 @@ body.no-scroll .page-util.fixed{
     z-index:3;
     width:100%;
     height:100%;
-    background:url(https://img.megabox.co.kr/static/pc/images/movie/bg-movie-detail-pattern.png) repeat-x 0 0
+    background:url(../../pc/images/movie/bg-movie-detail-pattern.png) repeat-x 0 0
 }
 .movie-detail-page .bg-mask{
     position:absolute;
@@ -847,13 +938,13 @@ body.no-scroll .page-util.fixed{
     background-color:#fff
 }
 .movie-detail-page .movie-detail-cont .btn-util .btn.on .ico-heart-line,.movie-detail-page .movie-detail-cont .btn-util .btn:hover .ico-heart-line{
-    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-heart-on.png)
+    background-image:url(../../pc/images/common/ico/ico-heart-on.png)
 }
 .movie-detail-page .movie-detail-cont .btn-util .btn:hover .ico-sns-line{
-    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-sns-on.png)
+    background-image:url(../../pc/images/common/ico/ico-sns-on.png)
 }
 .movie-detail-page .movie-detail-cont .btn-util .btn:hover .ico-bell-line{
-    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-bell-green.png)
+    background-image:url(../../pc/images/common/ico/ico-bell-green.png)
 }
 .movie-detail-page .movie-detail-cont .btn-util .sns-share{
     position:relative;
@@ -900,7 +991,7 @@ body.no-scroll .page-util.fixed{
     display:block;
     width:22px;
     height:12px;
-    background:url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-tooltip-arr-top-script.png) no-repeat 0 0
+    background:url(../../pc/images/common/bg/bg-tooltip-arr-top-script.png) no-repeat 0 0
 }
 .movie-detail-page .movie-detail-cont .btn-util .sns-share .btn-sns-share-wrap .cont-area{
     position:relative
@@ -917,7 +1008,7 @@ body.no-scroll .page-util.fixed{
     padding:0;
     border:0;
     text-indent:-9999px;
-    background:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-close-common-sns.png) no-repeat 0 0
+    background:url(../../pc/images/common/btn/btn-close-common-sns.png) no-repeat 0 0
 }
 .movie-detail-page .movie-detail-cont .info{
     position:absolute;
@@ -944,7 +1035,7 @@ body.no-scroll .page-util.fixed{
 }
 .movie-detail-page .movie-detail-cont .info .score .number{
     padding:0 0 0 30px;
-    background:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-megabox.png) no-repeat 0 center;
+    background:url(../../pc/images/common/ico/ico-megabox.png) no-repeat 0 center;
     font-family:Roboto,Dotum,'돋움',sans-serif;
     font-weight:400
 }
@@ -967,14 +1058,14 @@ body.no-scroll .page-util.fixed{
 }
 .movie-detail-page .movie-detail-cont .info .score .number.lt .after{
     font-size:2.1333em;
-    background-image:url(https://img.megabox.co.kr/static/pc/images/movie/bg-arr-score-lt.png)
+    background-image:url(../../pc/images/movie/bg-arr-score-lt.png)
 }
 .movie-detail-page .movie-detail-cont .info .score .number.gt .before{
     font-size:2.1333em
 }
 .movie-detail-page .movie-detail-cont .info .score .number.gt .after{
     font-size:1.6em;
-    background-image:url(https://img.megabox.co.kr/static/pc/images/movie/bg-arr-score-gt.png)
+    background-image:url(../../pc/images/movie/bg-arr-score-gt.png)
 }
 .movie-detail-page .movie-detail-cont .info .score .number.equal{
     line-height:35px
@@ -987,7 +1078,7 @@ body.no-scroll .page-util.fixed{
 .movie-detail-page .movie-detail-cont .info .score .number.equal .after{
     padding-left:26px;
     font-size:1.6em;
-    background-image:url(https://img.megabox.co.kr/static/pc/images/movie/bg-arr-score-equal.png)
+    background-image:url(../../pc/images/movie/bg-arr-score-equal.png)
 }
 .movie-detail-page .movie-detail-cont .info .rate{
     float:left;
@@ -999,7 +1090,7 @@ body.no-scroll .page-util.fixed{
     padding:0 0 0 30px;
     vertical-align:middle;
     line-height:1.1;
-    background:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-ticket-gray.png) no-repeat 0 center
+    background:url(../../pc/images/common/ico/ico-ticket-gray.png) no-repeat 0 center
 }
 .movie-detail-page .movie-detail-cont .info .rate .cont em{
     margin:0 4px 0 0;
@@ -1025,7 +1116,7 @@ body.no-scroll .page-util.fixed{
     padding:0 0 0 30px;
     vertical-align:middle;
     line-height:1.1;
-    background:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-person.png) no-repeat 0 center
+    background:url(../../pc/images/common/ico/ico-person.png) no-repeat 0 center
 }
 .movie-detail-page .movie-detail-cont .info .audience .cont em{
     margin:0 4px 0 0;
@@ -1074,7 +1165,7 @@ body.no-scroll .page-util.fixed{
     height:36px;
     font-size:0;
     line-height:0;
-    background:url(https://img.megabox.co.kr/static/pc/images/movie/btn-poster-down.png) no-repeat 0 0;
+    background:url(../../pc/images/movie/btn-poster-down.png) no-repeat 0 0;
     opacity:.45
 }
 .movie-detail-page .movie-detail-cont .screen-type{
@@ -1309,7 +1400,7 @@ body.no-scroll .page-util.fixed{
     bottom:-11px;
     width:22px;
     height:11px;
-    background-image:url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-tooltip-arr-bottom.png)
+    background-image:url(../../pc/images/common/bg/bg-tooltip-arr-bottom.png)
 }
 .m-detail-tooltip .cont-area .reset{
     color:#666

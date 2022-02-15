@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ko">
 <head>
     <meta charset="utf-8">
@@ -8,17 +9,110 @@
 	<link rel="shortcut icon" href="/static/pc/images/favicon.ico">
 	<title>(나의 촛불) 주요정보 &lt; 영화 | MEET PLAY SHARE, 메가박스</title>
 
-    <link rel="stylesheet" type="text/css" href="pc/css/info.css" media="all" />
+    <link rel="stylesheet" href="{% static 'Templates/main/pc/css/info.css' %}">
+	<link rel="stylesheet" href="{% static 'Templates/main/pc/css/header.css' %}">
+	<link rel="stylesheet" href="{% static 'Templates/main/pc/css/footer.css' %}">
     <style type="text/css">
 
-	</style>
+        /* Chart.js */
+        /*
+         * DOM element rendering detection
+         * https://davidwalsh.name/detect-node-insertion
+         */
+        @keyframes chartjs-render-animation {
+            from { opacity: 0.99; }
+            to { opacity: 1; }
+        }
+
+        .chartjs-render-monitor {
+            animation: chartjs-render-animation 0.001s;
+        }
+
+        /*
+         * DOM element resizing detection
+         * https://github.com/marcj/css-element-queries
+         */
+        .chartjs-size-monitor,
+        .chartjs-size-monitor-expand,
+        .chartjs-size-monitor-shrink {
+            position: absolute;
+            direction: ltr;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: -1;
+        }
+
+        .chartjs-size-monitor-expand > div {
+            position: absolute;
+            width: 1000000px;
+            height: 1000000px;
+            left: 0;
+            top: 0;
+        }
+
+        .chartjs-size-monitor-shrink > div {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            left: 0;
+            top: 0;
+        }
+
+    </style>
 </head>
 <body>
-    <header id="header">
+    <!-- header -->
+    <header id="header" class="main-header no-bg">
+        <h1 class="ci"><a href="/" title="MEGABOX 메인으로 가기">MEGABOX : Life Theater</a></h1>
+
+
+        <!-- topGnb -->
+        <div class="util-area">
+            <div class="left-link">
+                <a href="#" title="VIP LOUNGE">VIP LOUNGE</a>
+                <a href="#" title="멤버십">멤버십</a>
+                <a href="#" title="고객센터">고객센터</a>
+            </div>
+
+            <div class="right-link">
+                <!-- 로그인전 -->
+                <div class="before" style="">
+                    <a href="#" title="로그인">로그인</a>
+                    <a href="#" title="회원가입">회원가입</a>
+                    <a href="#" title="빠른예매">빠른예매</a>
+                </div>
+                <!-- 로그인후 삭제했음 / 빠른예매칸이 사라져서 칸만 추가했습니다.-->
+            </div>
+        </div>
+        <div class="link-area">
+            <a href="#" class="header-open-layer btn-layer-sitemap" title="사이트맵">사이트맵</a>
+            <a href="#" class="header-open-layer btn-layer-search" title="검색">검색</a>
+            <a href="#" class="link-ticket" title="상영시간표">상영시간표</a>
+            <a href="#" class="header-open-layer btn-layer-mymega" title="나의 메가박스">나의 메가박스</a>
+        </div>
+        <!-- gnb -->
+        <nav id="gnb" class="">
+            <ul class="gnb-depth1">
+                <li class=""><a href="#" class="gnb-txt-movie" title="영화">영화</a></li>
+                <li class=""><a href="#" class="gnb-txt-reserve" title="예매">예매</a></li>
+                <li class=""><a href="#" class="gnb-txt-theater" title="극장">극장</a></li>
+                <li class=""><a href="#" class="gnb-txt-event" title="이벤트">이벤트</a></li>
+                <li><a href="#" class="gnb-txt-store" title="스토어">스토어</a></li>
+                <li><a href="#" class="gnb-txt-benefit" title="혜택">혜택</a></li>
+            </ul>
+        </nav>
+        <!--// gnb -->
+        <!--// topGnb -->
+
+         <!-- 사이트맵/검색/상영시간표/나의 메가박스 레이어 삭제함-->
 
     </header>
-    <!-- //header -->
-    <br>
+    <!--// header -->
 
     <!-- container -->
     <div id="schdlContainer" class="container area-ad no-padding-bottom">
@@ -37,7 +131,8 @@
         <div id="contents" class="no-padding">
 
             <div class="movie-detail-page"> <!-- 영화 상세정보 페이지 포스터 안에 보이는 정보 부분 -->
-                <div class="bg-img" style="background-image:url('https://img.megabox.co.kr/SharedImg/2022/01/17/D8QqlBy4ENVlO68dp1QdgzZ8uhlc3r3Q_570.jpg');"></div>
+                <!-- <div class="bg-img" style="background-image:url('https://img.megabox.co.kr/SharedImg/2022/01/17/D8QqlBy4ENVlO68dp1QdgzZ8uhlc3r3Q_570.jpg');"></div> -->
+                <div class="bg-img" style="background-image:url({% static 'Templates/main/pc/images/movie/D8QqlBy4ENVlO68dp1QdgzZ8uhlc3r3Q_570.jpg'%});"></div>
                 <!-- DB로 영화의 정보란의 백그라운드 이미지 불러와서 적용-->
                 <div class="bg-pattern"></div>
                 <div class="bg-mask"></div>
@@ -119,7 +214,7 @@
                         <div class="wrap">
                                 <p class="movie-grade age-all">전체 관람가</p> <!-- DB 연령 제한 정보 불러오기-->
 
-                            <img src="https://img.megabox.co.kr/SharedImg/2022/01/25/Hfo5xEAlOj5YKDHIr4waqxnMykg7a0mL_420.jpg" onerror="noImg(this)" alt="나의 촛불"><!-- DB 포스터 이미지 불러오기-->
+                            <img src="{% static 'Templates/main/pc/images/movie/Hfo5xEAlOj5YKDHIr4waqxnMykg7a0mL_420.jpg'%}" onerror="noImg(this)" alt="나의 촛불"><!-- DB 포스터 이미지 불러오기-->
 
                             <a href="#" class="btn-poster-down" title="포스터 다운로드" data-no="1088172" data-sn="1">포스터 다운로드</a>
                         </div>
@@ -193,9 +288,19 @@
                     <dd id="charByPoint">스토리·연출</dd>
                 </dl>
 
-                <div class="graph" style="position: relative; bottom: 29px;"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                <div class="graph" style="position: relative; bottom: 29px;">
+                    <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                            <div class="">
+                            </div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                            <div class="">
+                            </div>
+                        </div>
+                    </div>
                     <canvas id="chartByStart" style="width: 216px; height: 216px; display: block;" width="216" height="216" class="chartjs-render-monitor"></canvas>
-                    <img src="../../../static/pc/images/movie/no-graph01.jpg" alt="기대포인트 결과 없음" style="display: none;">
+                    <img src="{% static 'Templates/main/pc/images/movie/no-graph01.jpg'%}" alt="기대포인트 결과 없음" style="display: none;">
                 </div>
             </div>
 
@@ -205,7 +310,7 @@
                     <dd class="font-roboto"><em>9.5</em><span class="ir">점</span></dd>
                 </dl>
                 <div class="graph" style="display: none;">
-                    <img src="../../../static/pc/images/movie/no-graph02.jpg" alt="메가스코어 결과 없음">
+                    <img src="{% static 'Templates/main/pc/images/movie/no-graph02.jpg'%}" alt="메가스코어 결과 없음">
                 </div>
                 <div class="score equal" style="position: relative; bottom: 29px;">
                     <div class="middle">
@@ -223,9 +328,19 @@
                     </dd>
                 </dl>
 
-                <div class="graph" style="position: relative; bottom: 10px; right: 10px;"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                <div class="graph" style="position: relative; bottom: 10px; right: 10px;">
+                    <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                            <div class="">
+                            </div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                            <div class="">
+                            </div>
+                        </div>
+                    </div>
                     <canvas id="chartByBar" style="display: block; width: 216px; height: 216px;" width="216" height="216" class="chartjs-render-monitor"></canvas>
-                    <img src="../../../static/pc/images/movie/no-graph03.jpg" alt="기대율 결과 없음" style="display: none;">
+                    <img src="{% static 'Templates/main/pc/images/movie/no-graph03.jpg'%}" alt="기대율 결과 없음" style="display: none;">
                 </div>
             </div>
 
@@ -239,7 +354,7 @@
 
                 <div class="graph">
                     <canvas id="chartByLine" style="width: 220px; height: 205px; display: block;" width="220" height="205"></canvas>
-                    <img src="../../../static/pc/images/movie/no-graph04.jpg" alt="일자별 관객수 결과 없음" style="display: none;">
+                    <img src="{% static 'Templates/main/pc/images/movie/no-graph04.jpg'%}" alt="일자별 관객수 결과 없음" style="display: none;">
                 </div>
             </div>
         </div>
@@ -258,12 +373,59 @@
         <a href="" class="btn-go-top" title="top">top</a>
     </div>
 
+
     <!-- footer -->
     <footer id="footer">
+        <!-- footer-top -->
+        <div class="footer-top">
+            <div class="inner-wrap">
+                <ul class="fnb">
+                    <li><a href="#" title="회사소개 페이지로 이동">회사소개</a></li>
+                    <li><a href="#" title="인재채용 페이지로 이동">인재채용</a></li>
+                    <li><a href="#" title="사회공헌 페이지로 이동">사회공헌</a></li>
+                    <li><a href="#" title="제휴/광고/부대사업문의 페이지로 이동">제휴/광고/부대사업문의</a></li>
+                    <li><a href="#" title="이용약관 페이지로 이동">이용약관</a></li>
+                    <li><a href="#" title="위치기반서비스 이용약관 페이지로 이동">위치기반서비스 이용약관</a></li>
+                    <li class="privacy"><a href="#" title="개인정보처리방침 페이지로 이동">개인정보처리방침</a></li>
+                    <li><a href="#" target="_blank" title="윤리경영 페이지로 이동">윤리경영</a></li>
+                </ul>
 
+                <a href="#layer_looking_theater" class="btn-looking-theater" title="극장찾기"><i class="iconset ico-footer-search"></i> 극장찾기</a>
+            </div>
+        </div>
+        <!--// footer-top -->
 
+        <!-- footer-bottom -->
+        <div class="footer-bottom">
+            <div class="inner-wrap">
+                <div class="ci">MEGABOX : Life Theater</div>
+
+                <div class="footer-info">
+                    <div>
+                        <address>서울특별시 마포구 월드컵로 240, 지상2층(성산동, 월드컵주경기장)</address>
+                        <p>ARS 1544-0070</p>
+                    </div>
+                    <p>대표자명 홍정인</p>
+                    <p>· 개인정보보호책임자 공성진</p>
+                    <p>· 사업자등록번호 211-86-59478</p>
+                    <p>· 통신판매업신고번호 제 2020-서울마포-4545 호</p>
+                    <p class="copy">COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved</p>
+                </div>
+
+                <div class="footer-sns">
+                    <a href="https://twitter.com/megaboxon" target="_blank" title="MEGABOX 트위터 페이지로 이동"><i class="iconset ico-twitter">트위터</i></a>
+                    <a href="https://www.facebook.com/megaboxon" target="_blank" title="MEGABOX 페이스북 페이지로 이동"><i class="iconset ico-facebook">페이스북</i></a>
+                    <a href="http://instagram.com/megaboxon" target="_blank" title="MEGABOX 인스타그램 페이지로 이동"><i class="iconset ico-instagram">인스타그램</i></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.megabox.mop" target="_blank" title="MEGABOX 구글플레이 페이지로 이동"><i class="iconset ico-googleplay">구글플레이</i></a>
+                    <a href="https://itunes.apple.com/kr/app/megabox/id894443858?l=ko&amp;ls=1&amp;mt=8" target="_blank" title="MEGABOX 앱스토어 페이지로 이동"><i class="iconset ico-appstore">앱스토어</i></a>
+                </div>
+            </div>
+        </div>
+        <!--// footer-bottom -->
+        <div id="layer_looking_theater" class="layer-looking-theater"></div>
     </footer>
     <!--// footer -->
+
 </body>
 
 </html>
