@@ -4,3 +4,8 @@ from django.shortcuts import render
 def main_ind(request) :
 
     return render(request, 'main/index.html')
+
+
+def info(request) :
+
+    return render(request, 'main/info.html')
