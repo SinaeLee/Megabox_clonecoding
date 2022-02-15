@@ -1,0 +1,1404 @@
+/*메인상단 광고영역 css*/
+/*header css*/
+}
+.header-add-area{
+    overflow:hidden;
+    position:relative;
+    width:100%;
+    min-width:1100px;
+    height:80px;
+    color:#fff;
+    text-align:center
+}
+.header-add-area .btn-del{
+    overflow:hidden;
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:20px;
+    height:20px;
+    margin:0;
+    padding:0;
+    border:0;
+    text-indent:-9999px;
+    background:url(https://img.megabox.co.kr/static/pc/images/reserve/btn-choice-dell.png) no-repeat 0 0
+}
+#header{
+    position:relative;
+    z-index:100;
+    width:100%;
+    min-width:1100px;
+    height:91px;
+    background:#fff;
+    border-bottom:1px solid #351f67
+}
+#header .ci{
+    position:absolute;
+    left:50%;
+    top:23px;
+    width:140px;
+    height:90px;
+    margin:0 0 0 -70px;
+    padding:0
+}
+#header .ci a{
+    display:block;
+    width:140px;
+    height:47px;
+    margin:0;
+    padding:0;
+    font-size:0;
+    line-height:0;
+    background:url(https://img.megabox.co.kr/static/pc/images/common/ci/logo_new2.png) center center no-repeat
+}
+#header .util-area{
+    position:relative;
+    width:1100px;
+    margin:0 auto;
+    color:#666
+}
+#header .util-area:after,#header .util-area:before{
+    content:'';
+    display:table
+}
+#header .util-area:after{
+    clear:both
+}
+#header .util-area .left-link{
+    position:absolute;
+    top:15px;
+    left:0;
+    font-size:.8667em
+}
+#header .util-area .left-link a{
+    float:left;
+    margin-right:20px;
+    vertical-align:top
+}
+#header .util-area .right-link{
+    position:absolute;
+    top:15px;
+    right:0
+}
+#header .util-area .right-link a{
+    display:block;
+    float:left;
+    margin-left:20px;
+    vertical-align:top
+}
+#header .util-area .right-link .layer-header-notice a{
+    display:inline-block;
+    float:inherit;
+    margin-left:0;
+    vertical-align:inherit
+}
+#header .util-area .right-link a:first-child{
+    margin-left:0
+}
+#header .util-area .right-link>a{
+    font-size:.8667em
+}
+#header .util-area .right-link>div{
+    float:left
+}
+#header .util-area .right-link .before{
+    font-size:.8667em
+}
+
+.layer-header-notice{
+    display:none;
+    position:absolute;
+    left:-220px;
+    top:30px;
+    z-index:2;
+    width:400px;
+    box-shadow:1px 1px 7px 0 rgba(0,0,0,.2);
+    border-radius:5px
+}
+.layer-header-notice.on{
+    display:block
+}
+.layer-header-notice p{
+    margin:0;
+    padding:0
+}
+.layer-header-notice .notice-wrap{
+    position:relative;
+    width:100%;
+    margin:0;
+    padding:20px;
+    border:1px solid #d8d9db;
+    background-color:#fff;
+    border-radius:5px
+}
+.layer-header-notice .notice-wrap:before{
+    content:'';
+    display:block;
+    position:absolute;
+    left:284px;
+    top:-11px;
+    width:22px;
+    height:11px;
+    background:url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-arr-layer-header-notice.png) no-repeat 0 0
+}
+.layer-header-notice .notice-wrap .tit-notice{
+    padding:0 0 16px 0;
+    line-height:1.1;
+    font-size:1.2em;
+    color:#222
+}
+.layer-header-notice .notice-wrap .count{
+    overflow:hidden;
+    padding:0 0 8px 0;
+    line-height:1.1;
+    font-size:.9333em
+}
+.layer-header-notice .notice-wrap .count .left{
+    float:left
+}
+.layer-header-notice .notice-wrap .count .left em{
+    color:#01738b
+}
+.layer-header-notice .notice-wrap .count .right{
+    float:right
+}
+.layer-header-notice .notice-wrap .scroll{
+    overflow:hidden;
+    overflow-y:auto;
+    max-height:460px;
+    border-top:1px solid #555
+}
+.layer-header-notice .notice-wrap .scroll .list li{
+    padding:13px 0;
+    line-height:1.3;
+    border-top:1px solid #eaeaea
+}
+.layer-header-notice .notice-wrap .scroll .list li:first-child{
+    border-top:0
+}
+.layer-header-notice .notice-wrap .scroll .list li .tit{
+    padding:0 5px 7px 0;
+    color:#503396
+}
+.layer-header-notice .notice-wrap .scroll .list li .cont{
+    padding:0 5px 7px 0;
+    font-size:.9333em
+}
+.layer-header-notice .notice-wrap .scroll .list li .time{
+    font-size:.9333em
+}
+.layer-header-notice .notice-wrap .scroll .list li.no-list{
+    padding:30px 0;
+    text-align:center
+}
+.layer-header-notice .notice-wrap .btn-close-header-notice{
+    overflow:hidden;
+    display:block;
+    position:absolute;
+    right:20px;
+    top:19px;
+    width:16px;
+    height:15px;
+    margin:0;
+    padding:0;
+    border:0;
+    text-indent:-9999px;
+    background:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-close-header-notice.png) no-repeat center
+}
+#header .link-area{
+    position:relative;
+    width:1100px;
+    margin:0 auto
+}
+#header .link-area:after,#header .link-area:before{
+    content:'';
+    display:table
+}
+#header .link-area:after{
+    clear:both
+}
+#header .link-area a{
+    display:block;
+    position:absolute;
+    top:42px;
+    width:36px;
+    height:36px;
+    font-size:0;
+    line-height:0;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:transparent
+}
+#header .link-area a.btn-layer-sitemap{
+    left:0;
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-sitemap.png)
+}
+#header .link-area a.btn-layer-search{
+    left:40px;
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-search.png)
+}
+#header .link-area a.link-ticket{
+    right:40px;
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-schedule.png)
+}
+#header .link-area a.btn-layer-mymega{
+    right:0;
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-mymega.png)
+}
+#header .link-area a.on{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-header-layer-close.png)!important
+}
+#header.no-bg{
+    background-color:rgba(0,0,0,.3);
+    border-bottom:1px solid rgba(255,255,255,.2)
+}
+#header.no-bg .ci a{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ci/logo-white_new2.png)
+}
+#header.no-bg .util-area{
+    color:#888
+}
+#header.no-bg .util-area a,#header.no-bg .util-area a:focus,#header.no-bg .util-area a:hover{
+    color:#888
+}
+#header.no-bg .link-area a.btn-layer-sitemap{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-sitemap-white.png)
+}
+#header.no-bg .link-area a.btn-layer-search{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-search-white.png)
+}
+#header.no-bg .link-area a.link-ticket{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-schedule-white.png)
+}
+#header.no-bg .link-area a.btn-layer-mymega{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-mymega-white.png)
+}
+#header.no-bg .link-area a.on{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-header-layer-close.png)!important
+}
+#gnb{
+    height:0
+}
+#gnb.on{
+    height:44px;
+    background-color:#339eb2
+}
+#gnb ul:after,#gnb ul:before{
+    content:'';
+    display:table
+}
+#gnb ul:after{
+    clear:both
+}
+#gnb ul li{
+    margin:0;
+    padding:0
+}
+#gnb ul li a{
+    display:block
+}
+#gnb ul li a:focus,#gnb ul li a:hover{
+    text-decoration:none
+}
+#gnb>ul{
+    position:relative;
+    width:1100px;
+    margin:90px auto 0 auto
+}
+#gnb>ul>li>a{
+    position:absolute;
+    top:-38px;
+    height:38px;
+    text-indent:-9999px;
+    background-position:center 0;
+    background-repeat:no-repeat
+}
+#gnb>ul>li>a:after{
+    content:'';
+    display:none;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:3px;
+    background-color:#339eb2
+}
+#gnb>ul>li.on>a:after{
+    display:block
+}
+#gnb>ul>li.on .gnb-depth2{
+    display:block
+}
+#gnb>ul>li:nth-child(1)>a{
+    left:166px
+}
+#gnb>ul>li:nth-child(2)>a{
+    left:256px
+}
+#gnb>ul>li:nth-child(3)>a{
+    left:345px
+}
+#gnb>ul>li:nth-child(4)>a{
+    right:347px
+}
+#gnb>ul>li:nth-child(5)>a{
+    right:241px
+}
+#gnb>ul>li:nth-child(6)>a{
+    right:150px
+}
+#gnb>ul>li>a.gnb-txt-movie{
+    width:30px;
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-movie.png)
+}
+#gnb>ul>li>a.gnb-txt-reserve{
+    width:30px;
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-reserve.png)
+}
+#gnb>ul>li>a.gnb-txt-theater{
+    width:31px;
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-theater.png)
+}
+#gnb>ul>li>a.gnb-txt-event{
+    width:45px;
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-event.png)
+}
+#gnb>ul>li>a.gnb-txt-store{
+    width:44px;
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-store.png)
+}
+#gnb>ul>li>a.gnb-txt-benefit{
+    width:29px;
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-benefit.png)
+}
+#gnb .gnb-depth2{
+    display:none;
+    position:absolute;
+    width:100%;
+    height:44px
+}
+#gnb .gnb-depth2 ul{
+    overflow:hidden;
+    display:block
+}
+#gnb .gnb-depth2 ul li{
+    display:block;
+    float:left;
+    margin-left:19px
+}
+#gnb .gnb-depth2 ul li:first-child{
+    margin-left:0
+}
+#gnb .gnb-depth2 ul li:last-child{
+    margin-right:0
+}
+#gnb .gnb-depth2 ul li a{
+    overflow:hidden;
+    display:block;
+    height:44px;
+    line-height:44px;
+    color:#fff
+}
+#gnb .gnb-depth2 ul li a:focus,#gnb .gnb-depth2 ul li a:hover{
+    text-decoration:underline
+}
+#gnb>ul>li:nth-child(1) .gnb-depth2 ul{
+    padding-left:50px
+}
+#gnb>ul>li:nth-child(2) .gnb-depth2 ul{
+    padding-left:166px
+}
+#gnb>ul>li:nth-child(3) .gnb-depth2 ul{
+    padding-left:300px
+}
+#gnb>ul>li:nth-child(4) .gnb-depth2 ul{
+    padding-left:598px
+}
+#gnb>ul>li:nth-child(6) .gnb-depth2 ul{
+    padding-left:834px
+}
+#header.no-bg #gnb{
+    background-color:rgba(0,0,0,.2)
+}
+#header.no-bg #gnb>ul>li>a{
+    color:#fff
+}
+#header.no-bg #gnb>ul>li>a:after{
+    background-color:#fff
+}
+#header.no-bg #gnb>ul>li>a.gnb-txt-movie{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-movie-white.png)
+}
+#header.no-bg #gnb>ul>li>a.gnb-txt-reserve{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-reserve-white.png)
+}
+#header.no-bg #gnb>ul>li>a.gnb-txt-theater{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-theater-white.png)
+}
+#header.no-bg #gnb>ul>li>a.gnb-txt-event{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-event-white.png)
+}
+#header.no-bg #gnb>ul>li>a.gnb-txt-store{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-store-white.png)
+}
+#header.no-bg #gnb>ul>li>a.gnb-txt-benefit {
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/gnb/gnb-txt-benefit-white.png)
+}
+.gnb-layer{
+    min-width:1100px
+}
+.layer-end-btn{
+    position:absolute;
+    top:37px
+}
+.layer-end-btn.sitemap-end{
+    left:74px
+}
+.layer-end-btn.search-end{
+    left:117px
+}
+.layer-end-btn.mymega-end{
+    right:72px
+}
+#header div>.header-bot{
+    position:absolute;
+    top:23px;
+    width:100%;
+    height:20px;
+    padding:0 80px;
+    z-index:99
+}
+#header div>.header-bot .float-l ul li{
+    margin-right:20px
+}
+#header div>.header-bot .float-r ul li{
+    margin-left:20px
+}
+.layer-sitemap{
+    display:none;
+    position:absolute;
+    left:0;
+    top:90px;
+    z-index:101;
+    width:100%;
+    min-width:1100px;
+    height:750px;
+    overflow:auto;
+    background-color:#333
+}
+.layer-sitemap.on{
+    display:block
+}
+.layer-sitemap .wrap{
+    overflow:hidden;
+    position:relative;
+    width:1100px;
+    height:100%;
+    margin:0 auto
+}
+.layer-sitemap .wrap p{
+    margin:0;
+    padding:0
+}
+.layer-sitemap .wrap .link-acc{
+    overflow:hidden;
+    width:1px;
+    height:1px;
+    position:absolute;
+    left:-99999px;
+    top:-99999px
+}
+.layer-sitemap .wrap .tit{
+    padding:50px 0 0 0;
+    font-size:1.4666em;
+    color:#fff;
+    line-height:1.1
+}
+.layer-sitemap .wrap .list{
+    position:absolute;
+    width:158px
+}
+.layer-sitemap .wrap .list.position-1{
+    left:0;
+    top:97px;
+    width:159px
+}
+.layer-sitemap .wrap .list.position-2{
+    left:189px;
+    top:97px
+}
+.layer-sitemap .wrap .list.position-3{
+    left:377px;
+    top:97px
+}
+.layer-sitemap .wrap .list.position-4{
+    left:565px;
+    top:97px
+}
+.layer-sitemap .wrap .list.position-5{
+    left:753px;
+    top:97px
+}
+.layer-sitemap .wrap .list.position-6{
+    left:941px;
+    top:97px;
+    width:159px
+}
+.layer-sitemap .wrap .list.position-7{
+    left:0;
+    top:368px;
+    width:159px
+}
+.layer-sitemap .wrap .list.position-8{
+    left:189px;
+    top:368px
+}
+.layer-sitemap .wrap .list.position-9{
+    left:377px;
+    top:368px
+}
+.layer-sitemap .wrap .list.position-10{
+    left:565px;
+    top:368px
+}
+.layer-sitemap .wrap .list .tit-depth{
+    height:48px;
+    color:#fff;
+    font-size:1.2em;
+    line-height:46px;
+    text-align:center;
+    border-width:1px 0;
+    border-color:rgba(68,68,68,.5);
+    border-style:solid
+}
+.layer-sitemap .wrap .list .list-depth{
+    line-height:1.1
+}
+.layer-sitemap .wrap .list .list-depth li{
+    padding:18px 0 0 0;
+    text-align:center
+}
+.layer-sitemap .wrap .list .list-depth li a{
+    display:inline-block;
+    color:#bbb
+}
+.layer-sitemap .wrap .list .list-depth li a:hover{
+    color:#339eb2;
+    text-decoration:underline
+}
+.layer-header-search{
+    display:none;
+    position:absolute;
+    left:0;
+    top:90px;
+    width:100%;
+    height:380px;
+    background-color:#351f67;
+    z-index:99
+}
+.layer-header-search.on{
+    display:block
+}
+.layer-header-search p{
+    margin:0;
+    padding:0
+}
+.layer-header-search .wrap{
+    overflow:hidden;
+    position:relative;
+    width:1100px;
+    height:100%;
+    margin:0 auto
+}
+.layer-header-search .wrap .link-acc{
+    overflow:hidden;
+    width:1px;
+    height:1px;
+    position:absolute;
+    left:-99999px;
+    top:-99999px
+}
+.layer-header-search .wrap .tab-rank{
+    padding-top:50px
+}
+.layer-header-search .wrap .tab-rank ul{
+    overflow:hidden
+}
+.layer-header-search .wrap .tab-rank ul li{
+    float:left;
+    margin:0 0 0 30px
+}
+.layer-header-search .wrap .tab-rank ul li:first-child{
+    margin:0
+}
+.layer-header-search .wrap .tab-rank ul li .btn{
+    display:block;
+    margin:0;
+    padding:0 0 8px 0;
+    text-decoration:none;
+    color:#fff;
+    line-height:1.1;
+    border:0;
+    border-bottom:2px solid transparent;
+    background-color:transparent
+}
+.layer-header-search .wrap .tab-rank ul li.on .btn{
+    border-color:#fff
+}
+.layer-header-search .wrap .rank-cont{
+    overflow:hidden;
+    position:relative;
+    min-height:215px;
+    margin:30px 0 0 0;
+    padding:0 0 0 200px
+}
+.layer-header-search .wrap .rank-cont .img{
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    top:0;
+    width:150px;
+    height:214px;
+    font-size:0;
+    line-height:0
+}
+.layer-header-search .wrap .rank-cont .img img{
+    width:100%;
+    max-height:100%
+}
+.layer-header-search .wrap .rank-cont .list{
+    width:250px
+}
+.layer-header-search .wrap .rank-cont .list li{
+    position:relative;
+    padding:11px 0 0 30px;
+    height:40px;
+    width:100%
+}
+.layer-header-search .wrap .rank-cont .list li em{
+    position:absolute;
+    left:0;
+    top:5px;
+    display:inline-block;
+    margin:0 10px 0 0;
+    font-family:Roboto;
+    font-style:italic;
+    font-size:1.8666em;
+    color:#fff;
+    font-weight:300;
+    line-height:1.1;
+    vertical-align:middle
+}
+.layer-header-search .wrap .rank-cont .list li a{
+    display:inline-block;
+    color:#fff;
+    text-decoration:none;
+    vertical-align:middle;
+    max-width:320px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis
+}
+.layer-header-search .wrap .rank-cont .list li a:hover{
+    text-decoration:underline
+}
+.layer-header-search .wrap .header-search-area{
+    overflow:hidden;
+    position:absolute;
+    left:560px;
+    top:170px;
+    width:420px;
+    height:60px;
+    border-bottom:1px solid #fff
+}
+.layer-header-search .wrap .header-search-area .input-text{
+    display:block;
+    float:left;
+    width:360px;
+    height:59px;
+    border:0;
+    font-size:1.2em;
+    color:#fff;
+    background-color:transparent
+}
+.layer-header-search .wrap .header-search-area .input-text::placeholder{
+    color:#fff;
+    opacity:1
+}
+.layer-header-search .wrap .header-search-area .input-text:-ms-input-placeholder{
+    color:#fff
+}
+.layer-header-search .wrap .header-search-area .input-text::-ms-input-placeholder{
+    color:#fff
+}
+.layer-header-search .wrap .header-search-area .btn-search{
+    overflow:hidden;
+    display:block;
+    width:60px;
+    height:60px;
+    margin:0;
+    padding:0;
+    text-indent:-9999px;
+    border:0;
+    background:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-header-search.png) no-repeat center
+}
+.layer-mymege{
+    display:none;
+    position:absolute;
+    left:0;
+    top:90px;
+    width:100%;
+    height:295px;
+    background-color:#037b94;
+    z-index:99
+}
+.layer-mymege.on{
+    display:block
+}
+.layer-mymege p{
+    margin:0;
+    padding:0
+}
+.layer-mymege .wrap{
+    overflow:hidden;
+    position:relative;
+    width:1100px;
+    height:100%;
+    margin:0 auto
+}
+.layer-mymege .wrap a{
+    color:#fff
+}
+.layer-mymege .wrap .button{
+    border-color:#fff;
+    color:#fff;
+    background-color:transparent
+}
+.layer-mymege .wrap .login-before{
+    color:#fff;
+    text-align:center
+}
+.layer-mymege .wrap .login-before .txt{
+    padding:65px 0 20px 0
+}
+.layer-mymege .wrap .login-before .link{
+    display:inline-block;
+    margin:0;
+    padding:0 0 5px 0;
+    line-height:1.1;
+    border-bottom:1px solid #fff;
+    border-color:rgba(255,255,255,.5);
+    text-decoration:none
+}
+.layer-mymege .wrap .login-after{
+    overflow:hidden;
+    padding:50px 0 0 250px;
+    color:#fff
+}
+.layer-mymege .wrap .login-after .user-info{
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    top:50px;
+    width:250px;
+    height:185px;
+    border-right:1px solid rgba(255,255,255,.2)
+}
+.layer-mymege .wrap .login-after .user-info .info{
+    padding:5px 0
+}
+.layer-mymege .wrap .login-after .user-info .info em{
+    font-size:1.333em
+}
+.layer-mymege .wrap .login-after .user-info .info em.vip{
+    color:#fff
+}
+.layer-mymege .wrap .login-after .user-info .last-date{
+    font-size:.8667em;
+    line-height:1.1
+}
+.layer-mymege .wrap .login-after .user-info .membership{
+    overflow:hidden;
+    padding:15px 0 0 0
+}
+.layer-mymege .wrap .login-after .user-info .membership i{
+    display:block;
+    float:left;
+    margin:0
+}
+.layer-mymege .wrap .login-after .user-info .membership i+i{
+    margin:0 0 0 10px
+}
+.layer-mymege .wrap .login-after .user-info .btn-fixed{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0
+}
+.layer-mymege .wrap .login-after .box{
+    overflow:hidden;
+    position:relative;
+    float:left;
+    width:25%;
+    height:185px;
+    padding:25px 0 0 0;
+    text-align:center
+}
+.layer-mymege .wrap .login-after .box .point .tit{
+    line-height:1.1
+}
+.layer-mymege .wrap .login-after .box .point .count{
+    margin:0;
+    padding:27px 0 0 0;
+    letter-spacing:-1px;
+    line-height:1.1;
+    font-size:2.666em;
+    font-weight:300;
+    font-family:Roboto
+}
+.layer-mymege .wrap .login-after .box .coupon .tit{
+    line-height:1.1
+}
+.layer-mymege .wrap .login-after .box .coupon .count{
+    overflow:hidden;
+    position:relative;
+    margin:0;
+    padding:27px 0 0 0;
+    letter-spacing:-1px;
+    line-height:1.1;
+    font-size:2.666em;
+    font-weight:300;
+    font-family:Roboto
+}
+.layer-mymege .wrap .login-after .box .coupon .count:after{
+    content:'/';
+    display:block;
+    position:absolute;
+    left:0;
+    right:0;
+    text-align:center
+}
+.layer-mymege .wrap .login-after .box .coupon .count em{
+    display:block;
+    float:left;
+    width:50%;
+    padding:0 10px 0 0;
+    text-align:right
+}
+.layer-mymege .wrap .login-after .box .coupon .count span{
+    display:block;
+    float:left;
+    width:50%;
+    padding:0 0 0 10px;
+    text-align:left
+}
+.layer-mymege .wrap .login-after .box .coupon .btn-fixed .button{
+    width:68px;
+    padding:0
+}
+.layer-mymege .wrap .login-after .box .reserve .tit{
+    line-height:1.1
+}
+.layer-mymege .wrap .login-after .box .reserve .txt{
+    padding:30px 0 0 0;
+    font-size:1.6em;
+    line-height:1.3;
+    display:inline-block;
+    max-height:124px;
+    white-space:normal;
+    word-wrap:break-word;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden
+}
+.layer-mymege .wrap .login-after .box .buy .tit{
+    line-height:1.1
+}
+.layer-mymege .wrap .login-after .box .buy .count{
+    margin:0;
+    padding:27px 0 0 0;
+    letter-spacing:-1px;
+    line-height:1.1
+}
+.layer-mymege .wrap .login-after .box .buy .count em{
+    display:inline-block;
+    font-size:2.666em;
+    font-weight:300;
+    font-family:Roboto;
+    vertical-align:middle
+}
+.layer-mymege .wrap .login-after .box .buy .count span{
+    display:inline-block;
+    font-size:1.6em;
+    vertical-align:middle
+}
+.layer-mymege .wrap .login-after .box .btn-fixed{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0
+}
+.layer-mymege .wrap .login-after .box .btn-fixed .button{
+    margin:0 3px
+}
+.container{
+    width:100%;
+    min-width:1100px;
+    min-height:100%;
+    margin:-92px 0 -200px 0;
+    padding:92px 0 300px 0
+}
+.container.no-padding-bottom{
+    padding-bottom:200px
+}
+.container.has-lnb #contents{
+    float:right;
+    width:calc(100% - 260px)
+}
+.container.area-ad{
+    margin-top:-172px;
+    padding-top:172px
+}
+.container.location-fixed{
+    padding-top:134px
+}
+.joinsInfo .container{
+    height:100%
+}
+#bookingArea body.no-scroll{
+    margin-right:0!important
+}
+#contents{
+    width:100%;
+    margin:0;
+    padding:40px 0 0 0
+}
+.location-fixed{
+    padding-top:42px
+}
+#contents.no-padding{
+    padding-top:0
+}
+#contents.location-fixed{
+    padding-top:82px
+}
+#contents.location-fixed.tab-fixed{
+    padding-top:124px
+}
+#contents.no-padding.location-fixed{
+    padding-top:42px
+}
+#contents.no-padding.location-fixed.tab-fixed{
+    padding-top:112px
+}
+#contents.tab-padding{
+    padding-top:20px
+}
+#contents.tab-padding.location-fixed{
+    padding-top:62px
+}
+#contents.tab-padding.location-fixed.tab-fixed{
+    padding-top:112px
+}
+#contents.no-padding.movie-fixed{
+    padding-top:543px
+}
+#contents.no-padding.movie-fixed.tab-fixed-movie{
+    padding-top:583px
+}
+#contents.no-padding.theater-fixed{
+    padding-top:458px
+}
+#contents.no-padding.theater-fixed.tab-fixed-theater{
+    padding-top:538px
+}
+.add-area{
+    overflow:hidden;
+    width:100%;
+    height:80px;
+    margin:70px auto 0 auto;
+    text-align:center
+}
+.add-area.big{
+    height:227px
+}
+.lnb-area{
+    float:left;
+    width:200px;
+    padding:40px 0 0 0;
+    background-color:#fff
+}
+.lnb-area.location-fixed{
+    padding-top:82px
+}
+#lnb{
+    margin:0;
+    padding:0
+}
+#lnb .tit{
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    border-radius:10px 10px 0 0;
+    background:url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-lnb-tit.png) 0 0
+}
+#lnb .tit a{
+    display:block;
+    width:100%;
+    font-size:1.2em;
+    line-height:90px;
+    text-align:center;
+    color:#fff;
+    text-decoration:none
+}
+#lnb>ul{
+    border:1px solid #d8d9db;
+    border-left-width:2px;
+    border-right-width:2px;
+    border-bottom-width:2px;
+    border-radius:0 0 10px 10px
+}
+#lnb ul li a{
+    display:block;
+    text-decoration:none;
+    line-height:1.3
+}
+#lnb ul li a:focus,#lnb ul li a:hover{
+    color:#01738b
+}
+#lnb ul li.on>a{
+    color:#01738b;
+    font-weight:400;
+    background:#fff url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-arr-lnb.png) no-repeat right center
+}
+#lnb>ul>li{
+    border-top:1px solid #d8d9db
+}
+#lnb>ul>li:first-child{
+    border-top:0
+}
+#lnb>ul>li>a{
+    display:block;
+    color:#222;
+    padding:10px 15px;
+    font-weight:400;
+    background-color:#f2f4f5
+}
+#lnb .depth3{
+    padding:20px 0
+}
+#lnb .depth3>li>a{
+    position:relative;
+    padding:2px 0 2px 24px;
+    color:#666
+}
+#lnb .depth3>li>a:before{
+    content:'';
+    display:block;
+    position:absolute;
+    left:17px;
+    top:10px;
+    width:2px;
+    height:2px;
+    background-color:#aaa
+}
+#lnb .left-customer-info{
+    position:relative;
+    z-index:2;
+    margin:-8px 0 0 0;
+    padding:20px 18px;
+    color:#666;
+    border:2px solid #d8d9db;
+    border-top-width:1px;
+    border-radius:0 0 10px 10px;
+    background-color:#fff
+}
+#lnb .left-customer-info p{
+    margin:0;
+    padding:0
+}
+#lnb .left-customer-info .tit{
+    margin:0;
+    padding:0;
+    border-radius:0;
+    background-image:none
+}
+#lnb .left-customer-info .tit span{
+    display:block;
+    position:relative;
+    padding:0 0 10px 0;
+    font-family:Roboto;
+    font-weight:300
+}
+#lnb .left-customer-info .tit span:after{
+    content:'';
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:20px;
+    height:1px;
+    background-color:#d4d4d4
+}
+#lnb .left-customer-info .tel{
+    padding-top:5px;
+    color:#503396;
+    font-family:Roboto;
+    font-weight:700;
+    font-size:1.7333em
+}
+#lnb .left-customer-info .time{
+    padding:5px 0 0 0;
+    font-family:Roboto;
+    font-weight:300
+}
+.container.has-lnb .has-ad-right #contents{
+    float:left;
+    width:calc(100% - 260px)
+}
+.container .has-ad-right .right-brn-area{
+    float:right;
+    width:200px;
+    padding:40px 0 0 0;
+    background-color:#fff
+}
+.container .has-ad-right .right-brn-area .brn{
+    width:100%;
+    font-size:0;
+    line-height:0
+}
+.container .has-ad-right .right-brn-area .brn a{
+    display:block;
+    width:100%
+}
+.container .has-ad-right .right-brn-area .brn a img{
+    width:100%
+}
+.page-util{
+    display:block;
+    position:static;
+    width:100%;
+    height:42px;
+    background-color:#f8f8fa
+}
+.page-util .location{
+    float:left;
+    height:42px
+}
+.page-util .location span{
+    overflow:hidden;
+    display:block;
+    float:left;
+    width:13px;
+    height:100%;
+    margin:0;
+    padding:0;
+    text-indent:-9999px;
+    background:url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-location-home.png) no-repeat center
+}
+.page-util .location a.no-link{
+    pointer-events:none;
+    cursor:default
+}
+.page-util .location a{
+    display:block;
+    position:relative;
+    float:left;
+    height:42px;
+    margin:0 0 0 25px;
+    padding:0;
+    line-height:46px;
+    color:#666
+}
+.page-util .location a:before,.page-util .location span.no-link:before{
+    content:'';
+    display:block;
+    position:absolute;
+    left:-14px;
+    top:0;
+    width:5px;
+    height:42px;
+    background:url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-location-arr.png) no-repeat left center
+}
+.page-util .sns-share{
+    position:relative;
+    float:right;
+    padding:13px 0 0 0
+}
+.page-util .sns-share .btn{
+    display:block;
+    height:22px;
+    margin:0;
+    padding:0;
+    border:0;
+    color:#666;
+    background-color:transparent
+}
+.page-util .sns-share .btn .ico-share-toggle{
+    width:15px;
+    height:18px;
+    margin-left:5px;
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-share-black.png)
+}
+.page-util .sns-share .btn-sns-share-wrap{
+    display:none;
+    position:absolute;
+    right:0;
+    top:54px;
+    z-index:55;
+    width:360px;
+    height:110px;
+    padding:20px 0 0 0;
+    border:1px solid #d8d9db;
+    border-radius:5px;
+    background-color:#fff
+}
+.page-util .sns-share .btn-sns-share-wrap.on{
+    display:block
+}
+.page-util .sns-share .btn-sns-share-wrap .btn{
+    display:inline-block;
+    min-width:50px;
+    margin:0 4px;
+    padding:48px 0 0 0;
+    border:0;
+    font-size:.9333em;
+    color:#444;
+    line-height:1.1;
+    background-color:transparent;
+    background-position:center top;
+    background-repeat:no-repeat
+}
+.page-util .sns-share .btn-sns-share-wrap:before{
+    content:'';
+    position:absolute;
+    right:34px;
+    top:-12px;
+    display:block;
+    width:22px;
+    height:12px;
+    background:url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-tooltip-arr-top-script.png) no-repeat 0 0
+}
+.page-util .sns-share .btn-sns-share-wrap .cont-area{
+    position:relative
+}
+.page-util .sns-share .btn-sns-share-wrap .cont-area .btn-close-common-sns{
+    overflow:hidden;
+    display:block;
+    position:absolute;
+    right:10px;
+    top:-12px;
+    width:12px;
+    height:12px;
+    margin:0;
+    padding:0;
+    border:0;
+    text-indent:-9999px;
+    background:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-close-common-sns.png) no-repeat 0 0
+}
+.page-util.fixed{
+    position:fixed;
+    left:0;
+    right:inherit;
+    top:0;
+    z-index:51;
+    background-color:#444
+}
+.page-util.fixed .location a{
+    color:#fff
+}
+.page-util.fixed .sns-share .btn{
+    color:#fff
+}
+.page-util.fixed .sns-share .btn .ico-share-toggle{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-share-white.png)
+}
+.page-util.fixed .sns-share .btn-sns-share-wrap .btn{
+    color:#444
+}
+.page-util.off{
+    display:none
+}
+.page-util.fixed.off{
+    display:block!important
+}
+body.no-scroll .page-util.fixed{
+    right:18px;
+    width:auto
+}
+.btn-sns-share-group{
+    margin:0;
+    padding:0;
+    text-align:center
+}
+.btn-sns-share-group .btn{
+    display:inline-block;
+    min-width:50px;
+    margin:0 4px;
+    padding:48px 0 0 0;
+    border:0;
+    font-size:.9333em;
+    line-height:1.1;
+    background-color:transparent;
+    background-position:center top;
+    background-repeat:no-repeat
+}
+.btn-sns-share-group .btn.kakao{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-kakao.png)
+}
+.btn-sns-share-group .btn.face{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-face.png)
+}
+.btn-sns-share-group .btn.band{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-band.png)
+}
+.btn-sns-share-group .btn.twitter{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-twitter.png)
+}
+.btn-sns-share-group .btn.link{
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-sns-share-link.png)
+}
+.ui-tooltip{
+    position:absolute;
+    z-index:9999;
+    max-width:300px;
+    margin:0;
+    padding:5px 16px;
+    box-shadow:none;
+    border:1px solid #666!important;
+    border-radius:16px;
+    font-family:NanumBarunGothic,Dotum,'돋움',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    font-size:.8em
+}
+.ui-tooltip:after{
+    content:'';
+    display:block;
+    position:absolute;
+    left:20px;
+    bottom:-6px;
+    width:10px;
+    height:6px;
+    margin:0;
+    background:url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-arr-jq-tooltip.png) no-repeat 0 0
+}
+.quick-area{
+    display:none;
+    position:relative;
+    width:100%
+}
+.quick-area .btn-go-top{
+    overflow:hidden;
+    display:block;
+    position:fixed;
+    left:50%;
+    bottom:25px;
+    width:48px;
+    height:48px;
+    margin:0 0 0 550px;
+    text-indent:-9999px;
+    border-radius:48px;
+    background:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-go-top.png) no-repeat 0 0;
+    box-shadow:1px 1px 7px 0 rgba(0,0,0,.5)
+}
