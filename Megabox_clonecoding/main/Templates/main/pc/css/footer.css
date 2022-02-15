@@ -75,7 +75,7 @@
     margin:0 20px 0 0;
     padding:0;
     text-indent:-9999px;
-    background:url(https://img.megabox.co.kr/static/pc/images/common/ci/logo-opacity_new2.png) no-repeat center
+    background-image:url(../../image/logo-opacity_new2.png)
 }
 #footer .footer-bottom .footer-info{
     float:left;
@@ -200,7 +200,7 @@
     padding:0;
     border:0;
     text-indent:-9999px;
-    background:url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-footer-theater-close.png) no-repeat center
+    background-image:url(../../image/btn-footer-theater-close.png)
 }
 .intro-body #footer .footer-top .fnb li a{
     font-size:.824em!important
