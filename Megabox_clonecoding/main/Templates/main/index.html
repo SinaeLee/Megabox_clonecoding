@@ -184,7 +184,7 @@
 					<!-- tab-sorting / 박스 오피스외 순위2종류 삭제했습니다.-->
 
 					<a href="#" class="more-movie" title="더 많은 영화보기">
-						더 많은 영화보기 <i class="iconset ico-more-corss gray"></i>
+						더 많은 영화보기 <img src="{% static 'Templates/main/image/ico-more-cross-gray.png' %}" <i class="iconset ico-more-corss gray"></i>
 					</a>
 
 					<!-- main-movie-list -->
@@ -224,7 +224,7 @@
 								<div class="btn-util">
 									<button type="button" class="button btn-like" rpst-movie-no="22000800">
 										<i title="보고싶어 설정 안함" class="iconset ico-heart-toggle-gray"></i>
-											286</button>
+											<img src="{% static 'Templates/main/image/ico-heart-toggle-main.png' %}">286</button>
 									<div class="case">
 										<!-- 개봉 예매가능 기본-->
 												<a href="javascript:moveBokdPage('22000800');" class="button gblue" title="영화 예매하기">예매</a>
@@ -361,17 +361,16 @@
 						</ol>
 					</div>
 					<!--// main-movie-list -->
-					<div class="search-link">
+					<div class="search-link" >
 						<div class="cell">
 							<div class="search">
-								<input type="text" placeholder="영화명을 입력해 주세요" title="영화 검색" class="input-text" id="movieName">
-								<button type="button" class="btn" id="btnSearch"><i class="iconset ico-search-w"></i> 검색</button>
+								<input type="text" placeholder="영화명을 입력해 주세요"  title="영화 검색" class="input-text" id="movieName">
+								<button type="button" class="btn" id="btnSearch"><img src="{% static 'Templates/main/image/ico-footer-search.png' %}"><i class="iconset ico-search-w"></i> 검색</button>
 							</div>
 						</div>
-
-						<div class="cell"><a href="#" title="상영시간표 보기"><i class="iconset ico-schedule-main"></i> 상영시간표</a></div>
-						<div class="cell"><a href="#" title="박스오피스 보기"><i class="iconset ico-boxoffice-main"></i> 박스오피스</a></div>
-						<div class="cell"><a href="#" title="빠른예매 보기"><i class="iconset ico-quick-reserve-main"></i> 빠른예매</a></div>
+						<div class="cell"><a href="#" title="상영시간표 보기"><img src="{% static 'Templates/main/image/ico-schedule-main.png' %}" class="iconset ico-schedule-main"> 상영시간표</a></div>
+						<div class="cell"><a href="#" title="박스오피스 보기"><img src="{% static 'Templates/main/image/ico-boxoffice-main.png' %}" class="iconset ico-boxoffice-main"> 박스오피스</a></div>
+						<div class="cell"><a href="#" title="빠른예매 보기"><img src="{% static 'Templates/main/image/ico-quick-reserve-main.png' %}" class="iconset ico-quick-reserve-main"> 빠른예매</a></div>
 					</div>
 				</div>
 				<!--// cont-area  -->
