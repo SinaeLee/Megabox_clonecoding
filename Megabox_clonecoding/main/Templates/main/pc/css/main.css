@@ -291,4 +291,39 @@ h2.tit {color:#351f66 !important;}
 .main-bottom-ad {overflow:hidden; width:100%; height:227px; margin:0 auto; color:#fff; text-align:center;}
 .main-bottom-ad iframe {display:block; margin:0 auto;}
 
+/* 아이콘추가 -화면상에 안뜸...*/
+.ico-main-customer{
+    width:46px;
+    height:46px;
+    background-image:url('image/ico-main-customer.png');
+    background-color: #0f0f0f;
+}
+.ico-main-faq{
+    width:50px;
+    height:46px;
+    background-image:url("image/ico-main-faq.png");
+}
+.ico-main-qna{
+    width:43px;
+    height:43px;
+    background-image:url("image/ico-main-qna.png");
+}
+.ico-main-group{
+    width:50px;
+    height:38px;
+    background-image:url("image/ico-main-group.png");
+}
+.ico-main-lost{
+    width:51px;
+    height:39px;
+    background-image:url("image/ico-main-lost.png");
+}
+.ico-main-boutique{
+    width:48px;
+    height:40px;
+    background-image:url("image/ico-main-boutique.png");
+}
 /*20210802 롤링팝업* 삭제 /
+
+
+ */
