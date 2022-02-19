@@ -140,15 +140,15 @@
                 <!-- movie-detail-cont -->
                 <div class="movie-detail-cont">
                     <!-- 개봉 예매가능-->
-                    <p class="contents-type">#GV</p>  <!-- DB 콘텐츠 타입 불러오기-->
-                    <p class="title">나의 촛불</p>  <!-- DB 영화 제목 불러오기-->
-                    <p class="title-eng">Candlelight Revolution</p>  <!-- DB 영화제목 영어버전 불러오기-->
+                    <p class="contents-type">{{movie.movie_type}}</p>  <!-- DB 콘텐츠 타입 불러오기-->
+                    <p class="title">{{movie.movie_title}}</p>  <!-- DB 영화 제목 불러오기-->
+                    <p class="title-eng">{{movie.movie_title_eng}}</p>  <!-- DB 영화제목 영어버전 불러오기-->
 
                     <div class="btn-util">
                         <button type="button" title="보고싶어 안함" class="btn btn-like" rpst-movie-no="20005300"><!-- 좋아요 누르는 버튼 -->
                             <i class="iconset ico-heart-line"></i>
                             <span title="보고싶어 한 명수" id="intrstCnt">  <!-- DB 좋아요 누른 수 불러오기- 버튼으로 누르는 수를 실시간으로 카운트 적용 가능?-->
-                                309
+                                {{movie.movie_like}}
                             </span>
                         </button>
 
@@ -176,13 +176,13 @@
                         <div class="score">
                             <p class="tit">실관람 평점</p>
                             <div class="number gt" id="mainMegaScore">
-                                <p title="실관람 평점" class="before"><em>9.5</em><span class="ir">점</span></p> <!-- DB 점수 불러오기-->
+                                <p title="실관람 평점" class="before"><em>{{movie.movie_score}}</em><span class="ir">점</span></p> <!-- DB 점수 불러오기-->
                             </div>
                         </div>
 
                         <div class="rate">
                             <p class="tit">예매율</p>
-                                    <p class="cont"><em>2</em>위 (16.6%)</p>  <!-- DB 예매율 불러오기-->
+                                    <p class="cont"><em>{{movie.movie_rank}}</em>위 ({{movie.movie_rate}})</p>  <!-- DB 예매율 불러오기, (순위 예매율)-->
 
                         </div>
 
@@ -204,7 +204,7 @@
                                     </em>
                                     </span>
                               </div>
-                              <p class="cont"><em>2,113</em> 명</p> <!-- DB 누적 관객수 불러오기-->
+                              <p class="cont"><em>{{movie.movie_audience}}</em> 명</p> <!-- DB 누적 관객수 불러오기-->
                         </div>
 
                     </div>
@@ -212,7 +212,7 @@
 
                     <div class="poster">
                         <div class="wrap">
-                                <p class="movie-grade age-all">전체 관람가</p> <!-- DB 연령 제한 정보 불러오기-->
+                                <p class="movie-grade age-all">{{movie.movie_age}}</p> <!-- DB 연령 제한 정보 불러오기-->
 
                             <img src="{% static 'Templates/main/pc/images/movie/Hfo5xEAlOj5YKDHIr4waqxnMykg7a0mL_420.jpg'%}" onerror="noImg(this)" alt="나의 촛불"><!-- DB 포스터 이미지 불러오기-->
 
@@ -250,15 +250,7 @@
         <div class="movie-summary" id="info">  <!-- DB 줄거리 정보 불러오기-->
 
                 <div class="txt">
-                    2016년 전세계가 주목한 그 시작의 날<br>
-                    진보와 보수를 넘나드는 정치인들이 그날의 비화를 증언한다!<br><br>
-                    부정부패와 국정농단으로 국민들을 우롱했던 날들.<br>
-                    대한민국의 1,600만명이 한 목소리로 세상을 바꿨던 그때를 기억합니다.<br><br>
-                    전세계가 주목한 가장 위대했던 그때의 뒷 이야기들을<br>
-                    김의성, 주진우가 고영태, 김성태, 박영석, 손석희, 심상정, 유시민, 윤석열, 추미애,<br>
-                    그리고 촛불 시민들과 함께 모두 풀어냅니다.<br><br>"모두가 불가능 할 것이라 했던 변화를 이끈 건 광화문에서 밝힌 국민들의 촛불이었다"<br><br>
-                    촛불혁명 후 5년.<br>
-                    차가워진 당신의 심장을 다시 뛰게 할 영화, 아직 꺼지지 않은 &lt;나의 촛불&gt;
+                    {{movie.movie_summary|linebreaksbr}}
                 </div>
                 <div class="btn-more">
                     <button type="button" class="btn"><span>더보기</span> <i class="iconset ico-btn-more-arr"></i></button>  <!-- 더보기 버튼 누르면 줄거리 전체보기 -->
@@ -268,15 +260,15 @@
 
         <!-- 영화 타입, 감독, 장르 등등 정보 나열 및 그래프 4개 보이는 부분 -->
         <div class="movie-info"><!-- DB 영화 제작자 정보 불러오기-->
-            <p>상영타입 : 2D</p>
+            <p>상영타입 : {{movie.movie_type2}}</p>
 
             <div class="line">
-               <p>감독&nbsp;: 김의성, 주진우</p>
-               <p>장르&nbsp;: 다큐멘터리 / 88 분</p>
-               <p>등급&nbsp;: 전체관람가</p>
-               <p>개봉일&nbsp;: 2022.02.10</p>
+               <p>감독&nbsp;: {{movie.movie_line1}}</p>
+               <p>장르&nbsp;: {{movie.movie_line2}} / {{movie.movie_line3}} 분</p>
+               <p>등급&nbsp;: {{movie.movie_line4}}</p>
+               <p>개봉일&nbsp;: {{movie.movie_line5}}</p>
             </div>
-            <p>출연진&nbsp;: 고영태, 김성태, 박영수, 손석희, 심상정, 유시민, 윤석열, 추미애</p>
+            <p>출연진&nbsp;: {{movie.movie_actor}}</p>
         </div>
 
 
@@ -307,14 +299,14 @@
             <div class="col" id="subMegaScore">
                 <dl>
                     <dt>실관람 평점</dt>
-                    <dd class="font-roboto"><em>9.5</em><span class="ir">점</span></dd>
+                    <dd class="font-roboto"><em>{{movie.movie_score}}</em><span class="ir">점</span></dd>
                 </dl>
                 <div class="graph" style="display: none;">
                     <img src="{% static 'Templates/main/pc/images/movie/no-graph02.jpg'%}" alt="메가스코어 결과 없음">
                 </div>
                 <div class="score equal" style="position: relative; bottom: 29px;">
                     <div class="middle">
-                        <div class="circle"><em>9.5</em><span class="ir">점</span></div>
+                        <div class="circle"><em>{{movie.movie_score}}</em><span class="ir">점</span></div>
                         <p>관람 후</p>
                     </div>
                 </div>
@@ -324,7 +316,7 @@
                 <dl>
                     <dt>예매율</dt>
                     <dd class="font-roboto">
-                        <span id="rkTag">16.6%</span>
+                        <span id="rkTag">{{movie.movie_rate}}</span>
                     </dd>
                 </dl>
 
@@ -348,7 +340,7 @@
                 <dl>
                     <dt>일자별관객수</dt>
                     <dd class="font-roboto regular">
-                            2,113
+                            {{movie.movie_audience}}
                     </dd>
                 </dl>
 
