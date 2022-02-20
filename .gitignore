@@ -1,0 +1,7 @@
+__pycache__/
+db.sqlite3
+db.sqlite3-journal
+*.pc[cod]
+*$py.class
+*.pyc
+.__pycache__/
