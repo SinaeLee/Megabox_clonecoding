@@ -1,5 +1,2 @@
-__pycache__/
-*.pc[cod]
-*$py.class
-*.pyc
-.__pycache__/
+Megabox_clonecoding/*/__pycache__
+Megabox_clonecoding/*/migrations
