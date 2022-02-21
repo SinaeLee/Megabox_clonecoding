@@ -646,6 +646,7 @@ body.no-scroll .page-util.fixed{
     background-color:transparent;
     color:#666
 }
+
 .btn-more .btn i{
     margin-left:6px
 }
@@ -654,6 +655,11 @@ body.no-scroll .page-util.fixed{
 }
 .btn-more.on .btn .ico-btn-more-arr{
     transform:rotate(180deg)
+}
+.ico-btn-more-arr {
+    width: 12px;
+    height: 7px;
+    background-image: url(../../pc/images/common/ico/ico-btn-more-arr.png);
 }
 .btn-more.v1 .btn{
     border:1px solid #eaeaea
