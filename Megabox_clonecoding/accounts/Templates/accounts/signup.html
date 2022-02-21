@@ -1,38 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        #wrap {
+            padding:0px;
+            margin:0 auto;
+            margin-top:20px;
+            width:800px;
+            height:600px;
+            border:1px solid;
+            position:relative; /*최상위태그의 포지션 지정*/
+        }
+        header {
+            height:50px;
+            line-height:50px;
+            background-color:#14148C;
+            color:white;
+        }
+        header h3 {
+            font-color:white;
+            padding-left:10px;
+        }
 
-{% block content %}
-<div class="container my-3">
-    <div class="row my-3">
-        <div class="col-4">
-            <h4>계정생성</h4>
+        .login-sub {
+            text-align:right;
+        }
+
+        #cont {
+            width:380px;
+            padding:20px;
+        }
+        .inform {
+            width:380px;
+            height:45px;
+            margin-bottom:17px;
+            border:solid 1px darkgray;
+        }
+
+        .signUp button {
+            width:380px;
+            height:50px;
+            margin-top:10px;
+            line-height:50px;
+            color:dimgray;
+            bgcolor:gray;
+            font-size:15px;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+        }
+
+        .signUp button:hover {
+            background-color:lightblue;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <header> <!--로그인헤더-->
+        <div id="headerBox">
+            <h3>회원가입</h3>
         </div>
-        <div class="col-8 text-right">
-            <span>또는 <a href="{% url 'accounts:login' %}">로그인 하세요.</a></span>
+        <div class="login-sub">
+            <span>또는 <a href="{% url 'accounts:login' %}">이미 가입한 계정이 있으신가요?(로그인)</a></span>
         </div>
-    </div>
-    <form method="post" class="post-form">
-        {% csrf_token %}
-        {% include "form_errors.html" %}
-        <div class="form-group">
-            <label for="username">사용자 이름</label>
-            <input type="text" class="form-control" name="username" id="username"
-                   value="{{ form.username.value|default_if_none:'' }}">
-        </div>
-        <div class="form-group">
-            <label for="password1">비밀번호</label>
-            <input type="password" class="form-control" name="password1" id="password1"
-                   value="{{ form.password1.value|default_if_none:'' }}">
-        </div>
-        <div class="form-group">
-            <label for="password2">비밀번호 확인</label>
-            <input type="password" class="form-control" name="password2" id="password2"
-                   value="{{ form.password2.value|default_if_none:'' }}">
-        </div>
-        <div class="form-group">
-            <label for="email">이메일</label>
-            <input type="text" class="form-control" name="email" id="email"
-                   value="{{ form.email.value|default_if_none:'' }}">
-        </div>
-        <button type="submit" class="btn btn-primary">생성하기</button>
-    </form>
-</div>
-{% endblock %}
+    </header>
+    <div id="cont">
+        <form name="signup_form" method="post" class="post-form" >
+            {% csrf_token %}
+            {% include "form_errors.html" %}
+            <div class="name">
+                <input name="username" id="username"  type="text" class="inform" placeholder="이름" value="{{ form.username.value|default_if_none:'' }}">
+                <div id="nameError" class="error"></div>
+            </div>
+            <div class="email">
+                <input name="email" id="email" type="text" class="inform" placeholder="이메일" value="{{ form.email.value|default_if_none:'' }}">
+                <div id="emailError" class="error"></div>
+            </div>
+            <div class="password">
+                <input name="password1" id="password1" type="password" class="inform" placeholder="비밀번호" value="{{ form.password1.value|default_if_none:'' }}">
+                <div id="passwordError" class="error"></div>
+            </div>
+            <div class="passwordCheck">
+                <input name="password2" id="password2" type="password" class="inform" placeholder="비밀번호 확인" value="{{ form.password2.value|default_if_none:'' }}">
+                <div id="passwordCheckError" class="error"></div>
+            </div>
+
+            <div class="line">
+                <hr>
+            </div>
+            <div class="signUp">
+                <button type="submit" id="signUpbtn" >가입하기</button>
+            </div>
+        </form>
+    </div> <!-- cont 끝 -->
+
+</div> <!-- wrap 끝 -->
+</body>
+</html>
