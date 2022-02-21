@@ -102,8 +102,12 @@
             <div class="right-link">
                 <!-- 로그인전 -->
                 <div class="before" style="">
-                    <a href="#" title="로그인">로그인</a>
-                    <a href="#" title="회원가입">회원가입</a>
+                    {% if user.is_authenticated %}
+                    <a href="{%url 'accounts:logout'%}" title="로그아웃" class="logout">{{user.username}}(로그아웃)</a>
+                    {% else %}
+                    <a href="{%url 'accounts:login'%}" title="로그인">로그인</a>
+                    {% endif %}
+                    <a href="{%url 'accounts:signup'%}" title="회원가입">회원가입</a>
                     <a href="#" title="빠른예매">빠른예매</a>
                 </div>
                 <!-- 로그인후 삭제했음 / 빠른예매칸이 사라져서 칸만 추가했습니다.-->
@@ -425,12 +429,12 @@
                 </div>
 
                 <div class="footer-sns">
-                    <a href="https://twitter.com/megaboxon" target="_blank" title="MEGABOX 트위터 페이지로 이동"><i class="iconset ico-twitter">트위터</i></a>
-                    <a href="https://www.facebook.com/megaboxon" target="_blank" title="MEGABOX 페이스북 페이지로 이동"><i class="iconset ico-facebook">페이스북</i></a>
-                    <a href="http://instagram.com/megaboxon" target="_blank" title="MEGABOX 인스타그램 페이지로 이동"><i class="iconset ico-instagram">인스타그램</i></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.megabox.mop" target="_blank" title="MEGABOX 구글플레이 페이지로 이동"><i class="iconset ico-googleplay">구글플레이</i></a>
-                    <a href="https://itunes.apple.com/kr/app/megabox/id894443858?l=ko&amp;ls=1&amp;mt=8" target="_blank" title="MEGABOX 앱스토어 페이지로 이동"><i class="iconset ico-appstore">앱스토어</i></a>
-                </div>
+                <a href="https://twitter.com/megaboxon" target="_blank" title="MEGABOX 트위터 페이지로 이동"><img src="{% static 'Templates/main/image/ico-twitter.png' %}"><i class="iconset ico-twitter">트위터</i></a>
+                <a href="https://www.facebook.com/megaboxon" target="_blank" title="MEGABOX 페이스북 페이지로 이동"><img src="{% static 'Templates/main/image/ico-facebook (1).png' %}"><i class="iconset ico-facebook">페이스북</i></a>
+                <a href="http://instagram.com/megaboxon" target="_blank" title="MEGABOX 인스타그램 페이지로 이동"><img src="{% static 'Templates/main/image/ico-instagram.png' %}"><i class="iconset ico-instagram">인스타그램</i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.megabox.mop" target="_blank" title="MEGABOX 구글플레이 페이지로 이동"><img src="{% static 'Templates/main/image/ico-googleplay.png' %}"><i class="iconset ico-googleplay">구글플레이</i></a>
+                <a href="https://itunes.apple.com/kr/app/megabox/id894443858?l=ko&amp;ls=1&amp;mt=8" target="_blank" title="MEGABOX 앱스토어 페이지로 이동"><img src="{% static 'Templates/main/image/ico-appstore.png' %}"><i class="iconset ico-appstore">앱스토어</i></a>
+            </div>
             </div>
         </div>
         <!--// footer-bottom -->
