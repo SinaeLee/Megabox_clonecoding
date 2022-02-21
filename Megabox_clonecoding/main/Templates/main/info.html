@@ -12,6 +12,26 @@
     <link rel="stylesheet" href="{% static 'Templates/main/pc/css/info.css' %}">
 	<link rel="stylesheet" href="{% static 'Templates/main/pc/css/header.css' %}">
 	<link rel="stylesheet" href="{% static 'Templates/main/pc/css/footer.css' %}">
+    <script src="{%static 'Templates/main/pc/js/jquery-3.5.1.min.js'%}"></script>
+    <script>
+    $(document).ready(function(){
+        $(document).on('click', '.btn-more .btn', function(){
+            $(this).closest('.btn-more').toggleClass('on');
+
+            if( $(this).closest('.btn-more').hasClass('on') ) {
+                $(this).find('span').text('닫기');
+            }
+            else {
+                $(this).find('span').text('더보기');
+            }
+
+            if( $('.movie-summary').length > 0 ) {
+                $(this).closest('.movie-summary').toggleClass('on');
+            }
+        });
+    });
+    </script>
+
     <style type="text/css">
 
         /* Chart.js */
