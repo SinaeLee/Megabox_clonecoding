@@ -156,7 +156,7 @@
 
             <div class="movie-detail-page"> <!-- 영화 상세정보 페이지 포스터 안에 보이는 정보 부분 -->
                 <!-- <div class="bg-img" style="background-image:url('https://img.megabox.co.kr/SharedImg/2022/01/17/D8QqlBy4ENVlO68dp1QdgzZ8uhlc3r3Q_570.jpg');"></div> -->
-                <div class="bg-img" style="background-image:url({% static 'Templates/main/pc/images/movie/D8QqlBy4ENVlO68dp1QdgzZ8uhlc3r3Q_570.jpg'%});"></div>
+                <div class="bg-img" style="background-image:url({{movie.movie_url_bg_poster}});"></div>
                 <!-- DB로 영화의 정보란의 백그라운드 이미지 불러와서 적용-->
                 <div class="bg-pattern"></div>
                 <div class="bg-mask"></div>
@@ -238,8 +238,7 @@
                         <div class="wrap">
                                 <p class="movie-grade age-all">{{movie.movie_age}}</p> <!-- DB 연령 제한 정보 불러오기-->
 
-                            <img src="{% static 'Templates/main/pc/images/movie/Hfo5xEAlOj5YKDHIr4waqxnMykg7a0mL_420.jpg'%}" onerror="noImg(this)" alt="나의 촛불"><!-- DB 포스터 이미지 불러오기-->
-
+                            <img src="{{movie.movie_url_poster}}" onerror="noImg(this)" alt="{{movie.movie_title}}"><!-- DB 포스터 이미지 불러오기-->
                             <a href="#" class="btn-poster-down" title="포스터 다운로드" data-no="1088172" data-sn="1">포스터 다운로드</a>
                         </div>
                     </div>
@@ -315,8 +314,7 @@
                             </div>
                         </div>
                     </div>
-                    <canvas id="chartByStart" style="width: 216px; height: 216px; display: block;" width="216" height="216" class="chartjs-render-monitor"></canvas>
-                    <img src="{% static 'Templates/main/pc/images/movie/no-graph01.jpg'%}" alt="기대포인트 결과 없음" style="display: none;">
+                    <img src="{{movie.movie_graph01}}" id="chartByStart" style="width: 216px; height: 216px; display: block;" width="216" height="216" class="chartjs-render-monitor">
                 </div>
             </div>
 
@@ -355,8 +353,7 @@
                             </div>
                         </div>
                     </div>
-                    <canvas id="chartByBar" style="display: block; width: 216px; height: 216px;" width="216" height="216" class="chartjs-render-monitor"></canvas>
-                    <img src="{% static 'Templates/main/pc/images/movie/no-graph03.jpg'%}" alt="기대율 결과 없음" style="display: none;">
+                    <img src="{{movie.movie_graph03}}" id="chartByBar" style="display: block; width: 216px; height: 216px;" width="216" height="216" class="chartjs-render-monitor">
                 </div>
             </div>
 
@@ -369,8 +366,7 @@
                 </dl>
 
                 <div class="graph">
-                    <canvas id="chartByLine" style="width: 220px; height: 205px; display: block;" width="220" height="205"></canvas>
-                    <img src="{% static 'Templates/main/pc/images/movie/no-graph04.jpg'%}" alt="일자별 관객수 결과 없음" style="display: none;">
+                    <img src="{{movie.movie_graph04}}" id="chartByLine" style="width: 220px; height: 205px; display: block;" width="220" height="205">
                 </div>
             </div>
         </div>
