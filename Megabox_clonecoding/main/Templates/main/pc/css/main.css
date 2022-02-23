@@ -56,6 +56,147 @@ h2.tit {color:#351f66 !important;}
 .my-movie-main .list li.txt a {display:block; height:40px; line-height:39px; font-size:0.8667em; text-align:center;}
 .my-movie-main .list li.txt a .iconset {margin:-2px 0 0 4px;}*/
 
+#header .link-area{
+    position:relative;
+    width:1100px;
+    margin:0 auto
+}
+#header .link-area:after,#header .link-area:before{
+    content:'';
+    display:table
+}
+#header .link-area:after{
+    clear:both
+}
+#header .link-area a{
+    display:block;
+    position:absolute;
+    top:42px;
+    width:36px;
+    height:36px;
+    font-size:0;
+    line-height:0;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:transparent
+}
+#header .link-area a.btn-layer-sitemap{
+    left:0;
+    background-image:url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-sitemap.png)
+}
+
+.layer-sitemap{
+    display:none;
+    position:absolute;
+    left:0;
+    top:90px;
+    z-index:101;
+    width:100%;
+    min-width:1100px;
+    height:750px;
+    overflow:auto;
+    background-color:#333
+}
+.layer-sitemap.on{
+    display:block
+}
+.layer-sitemap .wrap{
+    overflow:hidden;
+    position:relative;
+    width:1100px;
+    height:100%;
+    margin:0 auto
+}
+.layer-sitemap .wrap p{
+    margin:0;
+    padding:0
+}
+.layer-sitemap .wrap .link-acc{
+    overflow:hidden;
+    width:1px;
+    height:1px;
+    position:absolute;
+    left:-99999px;
+    top:-99999px
+}
+.layer-sitemap .wrap .tit{
+    padding:50px 0 0 0;
+    font-size:1.4666em;
+    color:#fff;
+    line-height:1.1
+}
+.layer-sitemap .wrap .list{
+    position:absolute;
+    width:158px
+}
+.layer-sitemap .wrap .list.position-1{
+    left:0;
+    top:97px;
+    width:159px
+}
+.layer-sitemap .wrap .list.position-2{
+    left:189px;
+    top:97px
+}
+.layer-sitemap .wrap .list.position-3{
+    left:377px;
+    top:97px
+}
+.layer-sitemap .wrap .list.position-4{
+    left:565px;
+    top:97px
+}
+.layer-sitemap .wrap .list.position-5{
+    left:753px;
+    top:97px
+}
+.layer-sitemap .wrap .list.position-6{
+    left:941px;
+    top:97px;
+    width:159px
+}
+.layer-sitemap .wrap .list.position-7{
+    left:0;
+    top:368px;
+    width:159px
+}
+.layer-sitemap .wrap .list.position-8{
+    left:189px;
+    top:368px
+}
+.layer-sitemap .wrap .list.position-9{
+    left:377px;
+    top:368px
+}
+.layer-sitemap .wrap .list.position-10{
+    left:565px;
+    top:368px
+}
+.layer-sitemap .wrap .list .tit-depth{
+    height:48px;
+    color:#fff;
+    font-size:1.2em;
+    line-height:46px;
+    text-align:center;
+    border-width:1px 0;
+    border-color:rgba(68,68,68,.5);
+    border-style:solid
+}
+.layer-sitemap .wrap .list .list-depth{
+    line-height:1.1
+}
+.layer-sitemap .wrap .list .list-depth li{
+    padding:18px 0 0 0;
+    text-align:center
+}
+.layer-sitemap .wrap .list .list-depth li a{
+    display:inline-block;
+    color:#bbb
+}
+.layer-sitemap .wrap .list .list-depth li a:hover{
+    color:#339eb2;
+    text-decoration:underline
+}
 /* 메인 영화 */
 .main-movie {display:block; position:relative; min-height:880px; padding:0 0 80px 0; /* background-color:#222; */}
 .main-movie .bg { overflow:hidden; position:absolute; z-index:2; width:100%; min-width:1100px; height:100%; margin:0 auto; /* background-attachment:scroll; background-position:center; background-repeat:no-repeat; background-size:100% auto; */}
